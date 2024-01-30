@@ -4,9 +4,9 @@ export const MainContainer = styled.View`
   flex: 1;
   justify-content: center;
   align-items: center;
-  background: #323232;
+  background: #FAFAFA;
 `
 
 export const Text = styled.Text`
-  color: "#FFF"
+  color: #323232
 `
