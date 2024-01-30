@@ -1,12 +1,12 @@
-import styled from "styled-components/native"
+import styled from "styled-components/native";
 
 export const MainContainer = styled.View`
   flex: 1;
   justify-content: center;
   align-items: center;
-  background: #FAFAFA;
-`
+  background: ${({ theme }) => theme.COLORS.GRAY_BACKGROUND_100};
+`;
 
 export const Text = styled.Text`
-  color: #323232
-`
+  color: ${({ theme }) => theme.COLORS.BLACK};
+`;
