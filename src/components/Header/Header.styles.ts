@@ -12,12 +12,12 @@ export const HeaderContainer = styled.View`
 
 export const LeftWrapper = styled.View`
   flex-direction: column;
-  gap: 8px;
+  gap: 4px;
 `;
 
 export const LocationText = styled.Text`
   color: #838383;
-  font-size: 12px;
+  font-size: 16px;
 `;
 
 export const LocationNameContainer = styled.TouchableOpacity`

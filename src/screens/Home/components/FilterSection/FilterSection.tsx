@@ -16,6 +16,14 @@ export const FilterSection = () => {
 
         <S.FilterTextInput />
       </S.FilterInputContainer>
+
+      <S.FilterButton>
+        <Icon
+          name="filter-variant"
+          size={32}
+          color={DEFAULT_THEME.COLORS.WHITE}
+        />
+      </S.FilterButton>
     </S.FilterSectionContainer>
   );
 };

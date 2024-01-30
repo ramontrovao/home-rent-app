@@ -22,6 +22,14 @@ export const FilterIconContainer = styled.View`
 export const FilterTextInput = styled.TextInput`
   background-color: transparent;
   color: ${({ theme }) => theme.COLORS.GRAY_200};
-  font-size: 12px;
+  font-size: 16px;
   padding: 16px;
+`;
+
+export const FilterButton = styled.TouchableOpacity`
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #0a8ed9;
 `;
