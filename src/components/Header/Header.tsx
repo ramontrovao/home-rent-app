@@ -1,7 +1,7 @@
 import Icon from "react-native-vector-icons/MaterialCommunityIcons"
 import RNPickerSelect from "react-native-picker-select";
 import * as S from "./Header.styles"
-import { StyleSheet, TouchableOpacity } from "react-native";
+import { TouchableOpacity } from "react-native";
 
 export const Header = () => {
   return (
@@ -9,14 +9,11 @@ export const Header = () => {
       <S.LeftWrapper>  
         <S.LocationText>Location</S.LocationText>
 
-        <RNPickerSelect
-                onValueChange={(language) => console.log(language)}
-                placeholder={{ label: "Select your location", value: "null" }}
-                items={[
-                    { label: "Espírito Santo", value: "ES" },
-                ]}
+        <S.LocationNameContainer>
+            <S.LocationNameText>Serra</S.LocationNameText>
 
-            />
+            <Icon name="chevron-down" size={32} color="#838383" />
+        </S.LocationNameContainer>
       </S.LeftWrapper>
 
       <TouchableOpacity>

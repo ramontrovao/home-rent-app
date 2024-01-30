@@ -15,5 +15,17 @@ export const LeftWrapper = styled.View`
 
 export const LocationText = styled.Text`
   color: #838383;
-  font-size: 16px;
+  font-size: 12px;
+`
+
+export const LocationNameContainer = styled.TouchableOpacity`
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+`
+
+export const LocationNameText = styled.Text`
+  font-size: 22px;
+  color: #000;
 `
