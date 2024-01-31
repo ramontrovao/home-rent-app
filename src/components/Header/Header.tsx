@@ -1,18 +1,20 @@
-import Icon from "react-native-vector-icons/MaterialCommunityIcons"
+import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 import RNPickerSelect from "react-native-picker-select";
-import * as S from "./Header.styles"
+import * as S from "./Header.styles";
 import { TouchableOpacity } from "react-native";
 
 export const Header = () => {
   return (
     <S.HeaderContainer>
-      <S.LeftWrapper>  
-        <S.LocationText>Location</S.LocationText>
+      <S.LeftWrapper>
+        <S.LocationText testID="location_title">Location</S.LocationText>
 
         <S.LocationNameContainer>
-            <S.LocationNameText>Serra</S.LocationNameText>
+          <S.LocationNameText testID="location_content">
+            Serra
+          </S.LocationNameText>
 
-            <Icon name="chevron-down" size={32} color="#838383" />
+          <Icon name="chevron-down" size={32} color="#838383" />
         </S.LocationNameContainer>
       </S.LeftWrapper>
 
@@ -20,5 +22,5 @@ export const Header = () => {
         <Icon name="bell-outline" size={32} />
       </TouchableOpacity>
     </S.HeaderContainer>
-  )
-}
+  );
+};
