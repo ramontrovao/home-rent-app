@@ -1,8 +1,11 @@
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 import * as S from "./FilterSection.styles";
 import { DEFAULT_THEME } from "@/styles/theme";
+import { useState } from "react";
 
 export const FilterSection = () => {
+  const [searchQuery, setSearchQuery] = useState("");
+
   return (
     <S.FilterSectionContainer>
       <S.FilterInputContainer>
@@ -14,10 +17,14 @@ export const FilterSection = () => {
           />
         </S.FilterIconContainer>
 
-        <S.FilterTextInput />
+        <S.FilterTextInput
+          value={searchQuery}
+          onChangeText={setSearchQuery}
+          testID="filter_text_input"
+        />
       </S.FilterInputContainer>
 
-      <S.FilterButton>
+      <S.FilterButton testID="filter_button">
         <Icon
           name="filter-variant"
           size={32}

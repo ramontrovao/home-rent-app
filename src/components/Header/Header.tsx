@@ -7,10 +7,12 @@ export const Header = () => {
   return (
     <S.HeaderContainer>
       <S.LeftWrapper>
-        <S.LocationText>Location</S.LocationText>
+        <S.LocationText testID="location_title">Location</S.LocationText>
 
         <S.LocationNameContainer>
-          <S.LocationNameText>Serra</S.LocationNameText>
+          <S.LocationNameText testID="location_content">
+            Serra
+          </S.LocationNameText>
 
           <Icon name="chevron-down" size={32} color="#838383" />
         </S.LocationNameContainer>
