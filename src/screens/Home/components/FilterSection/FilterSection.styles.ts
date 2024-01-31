@@ -25,6 +25,8 @@ export const FilterIconContainer = styled.View`
 export const FilterTextInput = styled.TextInput`
   padding: ${({ theme }) => theme.SPACING.LG};
 
+  flex: 1;
+
   background-color: transparent;
   color: ${({ theme }) => theme.COLORS.GRAY_200};
   font-size: ${({ theme }) => theme.FONT_SIZES.MD};

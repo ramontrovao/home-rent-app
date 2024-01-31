@@ -20,6 +20,7 @@ export const FilterSection = () => {
         <S.FilterTextInput
           value={searchQuery}
           onChangeText={setSearchQuery}
+          placeholder="Search address, or near you "
           testID="filter_text_input"
         />
       </S.FilterInputContainer>
