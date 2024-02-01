@@ -7,20 +7,22 @@ export const HomeListSectionContainer = styled(FlatList<THome>)`
 `;
 
 export const HomeContainer = styled.TouchableOpacity`
+  flex: 1;
   min-width: 220px;
-  min-height: 272px;
-
-  flex-direction: column;
-  justify-content: space-between;
+  min-height: 270px;
 `;
 
 export const HomeBackgroundImage = styled.ImageBackground`
-  padding: ${({ theme }) => theme.SPACING.MD};
-
   flex: 1;
-  justify-content: space-between;
+`;
 
-  border-radius: ${({ theme }) => theme.BORDER_RADIUS.MD};
+export const BackdropContainer = styled.View`
+  flex: 1;
+  justify-content: flex-end;
+
+  padding: ${({ theme }) => theme.SPACING.XL};
+  border-radius: ${({ theme }) => theme.BORDER_RADIUS.LG};
+  background-color: rgba(0, 0, 0, 0.4);
 `;
 
 export const HomeContent = styled.View`
@@ -29,10 +31,10 @@ export const HomeContent = styled.View`
 
 export const HomeTitle = styled.Text`
   color: ${({ theme }) => theme.COLORS.WHITE};
-  font-size: ${({ theme }) => theme.FONT_SIZES.MD};
+  font-size: ${({ theme }) => theme.FONT_SIZES.LG};
 `;
 
 export const HomeAddress = styled.Text`
   color: ${({ theme }) => theme.COLORS.GRAY_200};
-  font-size: ${({ theme }) => theme.FONT_SIZES.SM};
+  font-size: ${({ theme }) => theme.FONT_SIZES.MD};
 `;

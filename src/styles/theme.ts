@@ -20,5 +20,6 @@ export const DEFAULT_THEME = {
   },
   BORDER_RADIUS: {
     MD: "10px",
+    LG: "24px",
   },
 } as const;
