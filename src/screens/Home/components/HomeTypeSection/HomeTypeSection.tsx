@@ -23,7 +23,9 @@ export const HomeTypeSection = ({ homeTypes }: HomeTypeSectionProps) => {
       horizontal
       data={homeTypes}
       contentContainerStyle={{ gap: 16 }}
+      keyExtractor={(item) => item.id.toString()}
       showsHorizontalScrollIndicator={false}
+      testID="home_type_section"
       renderItem={renderItem}
     />
   );

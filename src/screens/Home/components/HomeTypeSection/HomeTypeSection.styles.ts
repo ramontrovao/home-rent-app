@@ -1,7 +1,11 @@
 import styled from "styled-components/native";
-import type { HomeTypeContainerStyledProps } from "./HomeTypeSection.types";
+import type {
+  HomeTypeContainerStyledProps,
+  THomeType,
+} from "./HomeTypeSection.types";
+import { FlatList } from "react-native";
 
-export const HomeTypeSectionContainer = styled.FlatList`
+export const HomeTypeSectionContainer = styled(FlatList<THomeType>)`
   margin-top: ${({ theme }) => theme.SPACING.LG};
 `;
 
