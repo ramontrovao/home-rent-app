@@ -1,5 +1,5 @@
 import { Header } from "./Header";
-import { render, screen } from "@testing-library/react-native";
+import { render, screen } from "@/utils/test-utils";
 
 describe("Component - <Header />", () => {
   const makeSut = () => render(<Header />);

@@ -11,7 +11,7 @@ export const Header = () => {
 
         <S.LocationNameContainer>
           <S.LocationNameText testID="location_content">
-            Serra
+            Centro de Vitória
           </S.LocationNameText>
 
           <Icon name="chevron-down" size={32} color="#838383" />
