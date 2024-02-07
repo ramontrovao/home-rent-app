@@ -5,6 +5,7 @@ export const DEFAULT_THEME = {
     GRAY_BACKGROUND_100: "#FAFAFA",
     GRAY_BACKGROUND_200: "#F7F7F7",
     BLUE_BACKGROUND_200: "#0A8ED9",
+    BLUE_300: "#0A8ED9",
     GRAY_200: "#858585",
     GRAY_300: "#838383",
   },
@@ -17,7 +18,7 @@ export const DEFAULT_THEME = {
     MD: 8,
     LG: 16,
     XL: 20,
-    XXL: 24
+    XXL: 24,
   },
   BORDER_RADIUS: {
     MD: 10,
