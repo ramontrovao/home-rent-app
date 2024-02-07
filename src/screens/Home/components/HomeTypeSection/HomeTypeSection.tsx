@@ -4,7 +4,7 @@ import type { HomeTypeSectionProps, THomeType } from "./HomeTypeSection.types";
 import { useState } from "react";
 
 export const HomeTypeSection = ({ homeTypes }: HomeTypeSectionProps) => {
-  const [selectedItem, setSelectedItem] = useState<number | null>(null);
+  const [selectedItem, setSelectedItem] = useState<number | null>(1);
 
   const renderItem: ListRenderItem<THomeType> = ({ item }) => {
     const isSelected = selectedItem === item.id;

@@ -4,7 +4,7 @@ import type { HomeListSectionProps } from "./HomeListSection.types";
 import { type ListRenderItem } from "react-native";
 
 export const HomeListSection = ({ homes }: HomeListSectionProps) => {
-  const renderItem: ListRenderItem<THome> = ({ item: { name } }) => {
+  const renderItem: ListRenderItem<THome> = ({ item: { name, imagesUri } }) => {
     return (
       <S.HomeContainer>
         <S.HomeBackgroundImage
@@ -12,7 +12,7 @@ export const HomeListSection = ({ homes }: HomeListSectionProps) => {
             borderRadius: 24,
           }}
           source={{
-            uri: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            uri: imagesUri[0],
           }}
         >
           <S.BackdropContainer>

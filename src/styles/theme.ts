@@ -9,17 +9,17 @@ export const DEFAULT_THEME = {
     GRAY_300: "#838383",
   },
   FONT_SIZES: {
-    MD: "16px",
-    LG: "20px",
+    MD: 16,
+    LG: 20,
   },
   SPACING: {
-    SM: "4px",
-    MD: "8px",
-    LG: "16px",
-    XL: "20px",
+    SM: 4,
+    MD: 8,
+    LG: 16,
+    XL: 20,
   },
   BORDER_RADIUS: {
-    MD: "10px",
-    LG: "24px",
+    MD: 10,
+    LG: 24,
   },
 } as const;
