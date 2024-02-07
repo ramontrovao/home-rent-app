@@ -35,6 +35,6 @@ export const HomeTitle = styled.Text`
 `;
 
 export const HomeAddress = styled.Text`
-  color: ${({ theme }) => theme.COLORS.GRAY_200};
+  color: ${({ theme }) => theme.COLORS.GRAY_300};
   font-size: ${({ theme }) => theme.FONT_SIZES.MD}px;
 `;

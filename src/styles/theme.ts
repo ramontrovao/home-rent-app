@@ -17,6 +17,7 @@ export const DEFAULT_THEME = {
     MD: 8,
     LG: 16,
     XL: 20,
+    XXL: 24
   },
   BORDER_RADIUS: {
     MD: 10,
