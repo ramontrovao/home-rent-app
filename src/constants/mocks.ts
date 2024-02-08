@@ -29,7 +29,7 @@ export const HOMES_MOCK: THome[] = [
       "The 3 level house that has a modern design, has a large pool and a garage that fits up to four cars",
     imagesUri: ["https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
     address: {
-      city: "Vitória",
+      city: "Vitória1",
       country: "Brazil",
       district: "Center",
       number: "123",
@@ -55,7 +55,7 @@ export const HOMES_MOCK: THome[] = [
       "The 3 level house that has a modern design, has a large pool and a garage that fits up to four cars",
     imagesUri: ["https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
     address: {
-      city: "Vitória",
+      city: "Vitória2",
       country: "Brazil",
       district: "Center",
       number: "123",
@@ -81,7 +81,7 @@ export const HOMES_MOCK: THome[] = [
       "The 3 level house that has a modern design, has a large pool and a garage that fits up to four cars",
     imagesUri: ["https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
     address: {
-      city: "Vitória",
+      city: "Vitória3",
       country: "Brazil",
       district: "Center",
       number: "123",
@@ -107,7 +107,7 @@ export const HOMES_MOCK: THome[] = [
       "The 3 level house that has a modern design, has a large pool and a garage that fits up to four cars",
     imagesUri: ["https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
     address: {
-      city: "Vitória",
+      city: "Vitória4",
       country: "Brazil",
       district: "Center",
       number: "123",
@@ -133,7 +133,7 @@ export const HOMES_MOCK: THome[] = [
       "The 3 level house that has a modern design, has a large pool and a garage that fits up to four cars",
     imagesUri: ["https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
     address: {
-      city: "Vitória",
+      city: "Vitória5",
       country: "Brazil",
       district: "Center",
       number: "123",
