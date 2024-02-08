@@ -4,12 +4,12 @@ import styled from "styled-components/native";
 
 export const HomeListSectionContainer = styled(FlatList<THome>)`
   margin-top: ${({ theme }) => theme.SPACING.LG}px;
+  padding-left: ${({ theme }) => theme.SPACING.XL}px;
 `;
 
 export const HomeContainer = styled.TouchableOpacity`
   flex: 1;
   min-width: 220px;
-  min-height: 270px;
 `;
 
 export const HomeBackgroundImage = styled.ImageBackground`

@@ -2,6 +2,7 @@ import styled from "styled-components/native";
 
 export const FilterSectionContainer = styled.View`
   width: 100%;
+  padding: 0 ${({ theme }) => theme.SPACING.XL}px;
 
   flex-direction: row;
   gap: ${({ theme }) => theme.SPACING.MD}px;

@@ -9,6 +9,8 @@ export const BestForYouSection = ({ homes }: BestForYouSectionProps) => {
   const renderItem: ListRenderItem<THome> = ({
     item: { name, price, bedroomsQuantity, bathromsQuantity, imagesUri },
   }) => {
+    const lastItem = homes[homes.length - 1]
+
     return (
       <S.BestForYouCardContainer>
         <S.HomeImage
@@ -21,7 +23,7 @@ export const BestForYouSection = ({ homes }: BestForYouSectionProps) => {
           <S.HomeNameText>{name}</S.HomeNameText>
           <S.HomePriceText>$ {price} / Year</S.HomePriceText>
 
-          <S.HomeInfoWrapper>
+          <S.HomeInfoWrapper hasPadding={name === lastItem.name}>
             <S.HomeInfoContainer>
               <S.HomeInfoText>
                 <Icon
@@ -58,7 +60,7 @@ export const BestForYouSection = ({ homes }: BestForYouSectionProps) => {
       </S.BestForYouHeaderContainer>
 
       <S.BestForYouListContainer
-        showsHorizontalScrollIndicator={false}
+        showsVerticalScrollIndicator={false}
         data={homes}
         renderItem={renderItem}
         keyExtractor={(item) => item?.id?.toString()}
