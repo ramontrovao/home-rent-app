@@ -6,9 +6,12 @@ import { DEFAULT_THEME } from "@/styles/theme";
 
 export const HomeListSection = ({ homes }: HomeListSectionProps) => {
   const renderItem: ListRenderItem<THome> = ({ item: { name, imagesUri, address: { country, state, city } } }) => {
+    const itemIndex = homes.findIndex(home => home.name === name)
+    
     return (
       <S.HomeContainer>
         <S.HomeBackgroundImage
+          testID={`home-background-image-${itemIndex + 1}`}
           imageStyle={{
             borderRadius: DEFAULT_THEME.BORDER_RADIUS.LG,
           }}
@@ -34,7 +37,7 @@ export const HomeListSection = ({ homes }: HomeListSectionProps) => {
       contentContainerStyle={{ gap: DEFAULT_THEME.SPACING.XXL }}
       keyExtractor={(item) => item.id.toString()}
       showsHorizontalScrollIndicator={false}
-      testID="home_type_section"
+      testID="home-list-section"
       renderItem={renderItem}
     />
   );

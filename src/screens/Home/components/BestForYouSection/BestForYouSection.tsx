@@ -50,7 +50,7 @@ export const BestForYouSection = ({ homes }: BestForYouSectionProps) => {
   };
 
   return (
-    <S.BestForYouSectionContainer>
+    <S.BestForYouSectionContainer testID="best-for-you-section">
       <S.BestForYouHeaderContainer>
         <S.BestForYouTitleText>Best for you</S.BestForYouTitleText>
 
