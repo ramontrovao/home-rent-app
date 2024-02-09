@@ -1,7 +1,10 @@
 import styled from "styled-components/native";
 import type { HomeInfoWrapperStyledProps } from "./BestForYouCard.types";
 
-export const BestForYouCardContainer = styled.TouchableOpacity`
+export const BestForYouCardContainer = styled.TouchableOpacity<HomeInfoWrapperStyledProps>`
+  padding-bottom: ${({ hasPadding, theme }) =>
+    hasPadding ? `${theme.SPACING.XXL}px` : 0};
+
   flex-direction: row;
   flex: 1;
   gap: ${({ theme }) => theme.SPACING.LG}px;
@@ -29,9 +32,7 @@ export const HomePriceText = styled.Text`
   font-size: ${({ theme }) => theme.FONT_SIZES.MD}px;
 `;
 
-export const HomeInfoWrapper = styled.View<HomeInfoWrapperStyledProps>`
-  padding-bottom: ${({ hasPadding, theme }) => hasPadding ? `${theme.SPACING.XXL}px` : 0};
-
+export const HomeInfoWrapper = styled.View`
   flex-direction: row;
   gap: ${({ theme }) => theme.SPACING.LG}px;
 `;

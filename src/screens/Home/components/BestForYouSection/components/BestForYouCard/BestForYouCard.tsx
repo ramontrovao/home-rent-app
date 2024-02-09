@@ -8,7 +8,7 @@ export const BestForYouCard = ({
   hasPadding = false,
 }: BestForYouCardProps) => {
   return (
-    <S.BestForYouCardContainer>
+    <S.BestForYouCardContainer hasPadding={hasPadding}>
       <S.HomeImage
         source={{
           uri: imagesUri[0],
@@ -19,16 +19,10 @@ export const BestForYouCard = ({
         <S.HomeNameText>{name}</S.HomeNameText>
         <S.HomePriceText>$ {price} / Year</S.HomePriceText>
 
-        <S.HomeInfoWrapper hasPadding={hasPadding}>
+        <S.HomeInfoWrapper>
           <S.HomeInfoContainer>
-            <S.HomeInfoText>
-              <Icon
-                name="bed"
-                size={18}
-                color={DEFAULT_THEME.COLORS.GRAY_300}
-              />
-              {bedroomsQuantity} Bedroom
-            </S.HomeInfoText>
+            <Icon name="bed" size={18} color={DEFAULT_THEME.COLORS.GRAY_300} />
+            <S.HomeInfoText>{bedroomsQuantity} Bedroom</S.HomeInfoText>
           </S.HomeInfoContainer>
 
           <S.HomeInfoContainer>

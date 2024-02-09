@@ -4,7 +4,6 @@ import { BestForYouSection } from "./BestForYouSection";
 
 const HOME_MOCK = HOMES_MOCK[0];
 
-// TODO: Encapsulate the card component and move most of unit tests
 describe("Component - <BestForYouSection />", () => {
   const makeSut = () => render(<BestForYouSection homes={HOMES_MOCK} />);
 
