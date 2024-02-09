@@ -3,49 +3,14 @@ import * as S from "./BestForYouSection.styles";
 import { BestForYouSectionProps } from "./BestForYouSection.types";
 import { DEFAULT_THEME } from "@/styles/theme";
 import type { THome } from "@/types/home";
-import Icon from "react-native-vector-icons/MaterialCommunityIcons";
+import { BestForYouCard } from "./components/BestForYouCard/BestForYouCard";
 
 export const BestForYouSection = ({ homes }: BestForYouSectionProps) => {
-  const renderItem: ListRenderItem<THome> = ({
-    item: { name, price, bedroomsQuantity, bathromsQuantity, imagesUri },
-  }) => {
-    const lastItem = homes[homes.length - 1]
+  const renderItem: ListRenderItem<THome> = ({ item }) => {
+    const lastItem = homes[homes.length - 1];
 
     return (
-      <S.BestForYouCardContainer>
-        <S.HomeImage
-          source={{
-            uri: imagesUri[0],
-          }}
-        />
-
-        <S.BestForYouCardRightWrapper>
-          <S.HomeNameText>{name}</S.HomeNameText>
-          <S.HomePriceText>$ {price} / Year</S.HomePriceText>
-
-          <S.HomeInfoWrapper hasPadding={name === lastItem.name}>
-            <S.HomeInfoContainer>
-              <S.HomeInfoText>
-                <Icon
-                  name="bed"
-                  size={18}
-                  color={DEFAULT_THEME.COLORS.GRAY_300}
-                />
-                {bedroomsQuantity} Bedroom
-              </S.HomeInfoText>
-            </S.HomeInfoContainer>
-
-            <S.HomeInfoContainer>
-              <Icon
-                name="bathtub-outline"
-                size={18}
-                color={DEFAULT_THEME.COLORS.GRAY_300}
-              />
-              <S.HomeInfoText>{bathromsQuantity} Bathroom</S.HomeInfoText>
-            </S.HomeInfoContainer>
-          </S.HomeInfoWrapper>
-        </S.BestForYouCardRightWrapper>
-      </S.BestForYouCardContainer>
+      <BestForYouCard home={item} hasPadding={item.name === lastItem.name} />
     );
   };
 

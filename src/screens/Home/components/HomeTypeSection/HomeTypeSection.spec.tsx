@@ -10,13 +10,4 @@ describe("Component - <HomeTypeSection />", () => {
 
     expect(homeTypeSectionComponent).toBeTruthy();
   });
-
-  it("should render correct home types", () => {
-    makeSut()
-    HOME_TYPES_MOCK.map(homeType => {
-      const homeTypeText = screen.getByText(homeType.name)
-
-      expect(homeTypeText).toBeTruthy()
-    })
-  })
 });

@@ -3,6 +3,7 @@ import { type ListRenderItem } from "react-native";
 import type { HomeTypeSectionProps, THomeType } from "./HomeTypeSection.types";
 import { useState } from "react";
 import { DEFAULT_THEME } from "@/styles/theme";
+import { HomeTypeCard } from "./HomeTypeCard/HomeTypeCard";
 
 export const HomeTypeSection = ({ homeTypes }: HomeTypeSectionProps) => {
   const [selectedItem, setSelectedItem] = useState<number | null>(1);
@@ -13,9 +14,11 @@ export const HomeTypeSection = ({ homeTypes }: HomeTypeSectionProps) => {
     const handleSelectItem = () => setSelectedItem(item.id);
 
     return (
-      <S.HomeTypeContainer onPress={handleSelectItem} isSelected={isSelected}>
-        <S.HomeTypeText isSelected={isSelected}>{item.name}</S.HomeTypeText>
-      </S.HomeTypeContainer>
+      <HomeTypeCard
+        homeType={item.name}
+        isSelected={isSelected}
+        onPress={handleSelectItem}
+      />
     );
   };
 

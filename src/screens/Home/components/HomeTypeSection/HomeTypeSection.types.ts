@@ -6,7 +6,3 @@ export type THomeType = {
 export interface HomeTypeSectionProps {
   homeTypes: THomeType[];
 }
-
-export interface HomeTypeContainerStyledProps {
-  isSelected: boolean;
-}
