@@ -1,11 +1,10 @@
-import type { THome } from "@/types/home";
-import { FlatList } from "react-native";
 import styled from "styled-components/native";
 
 export const BestForYouSectionContainer = styled.View`
   flex-direction: column;
   margin-top: ${({ theme }) => theme.SPACING.XXL}px;
-  padding: 0 ${({ theme }) => theme.SPACING.XL}px 0 ${({ theme }) => theme.SPACING.XL}px;
+  padding: 0 ${({ theme }) => theme.SPACING.XL}px
+    ${({ theme }) => theme.SPACING.XL}px ${({ theme }) => theme.SPACING.XL}px;
 
   flex: 1;
 `;
@@ -26,6 +25,9 @@ export const BestForYouSeeMoreText = styled.Text`
   font-size: ${({ theme }) => theme.FONT_SIZES.MD}px;
 `;
 
-export const BestForYouListContainer = styled(FlatList<THome>)`
-  margin-top: ${({ theme }) => theme.SPACING.LG}px;
+export const BestForYouListContainer = styled.View`
+  margin-top: ${({ theme }) => theme.SPACING.XXL}px;
+
+  gap: ${({ theme }) => theme.SPACING.MD}px;
+  flex: 1;
 `;

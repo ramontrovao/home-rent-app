@@ -10,6 +10,7 @@ export const DEFAULT_THEME = {
     GRAY_300: "#838383",
   },
   FONT_SIZES: {
+    SM: 14,
     MD: 16,
     LG: 20,
   },

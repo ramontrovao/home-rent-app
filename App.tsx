@@ -12,7 +12,6 @@ export default function App() {
       <SafeAreaProvider>
         <NavigationContainer>
           <S.AppContainer>
-            <Header />
             <Home />
           </S.AppContainer>
         </NavigationContainer>
