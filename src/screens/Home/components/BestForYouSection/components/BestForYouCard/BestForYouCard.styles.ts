@@ -44,5 +44,5 @@ export const HomeInfoContainer = styled.View`
 
 export const HomeInfoText = styled.Text`
   color: ${({ theme }) => theme.COLORS.GRAY_200};
-  font-size: ${({ theme }) => theme.FONT_SIZES.MD}px;
+  font-size: ${({ theme }) => theme.FONT_SIZES.SM}px;
 `;
