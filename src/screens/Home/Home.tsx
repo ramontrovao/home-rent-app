@@ -6,10 +6,15 @@ import { HOMES_MOCK, HOME_TYPES_MOCK } from "@/constants/mocks";
 import { HomeListSection } from "./components/HomeListSection/HomeListSection";
 import { BestForYouSection } from "./components/BestForYouSection/BestForYouSection";
 import { Header } from "@/components/Header/Header";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 export const Home = () => {
+  const insets = useSafeAreaInsets();
+
   return (
-    <S.MainContainer>
+    <S.MainContainer
+      style={{ paddingTop: insets.top, paddingBottom: insets.bottom }}
+    >
       <Header />
 
       <FilterSection />
