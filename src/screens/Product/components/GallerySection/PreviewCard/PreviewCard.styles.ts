@@ -1,6 +1,6 @@
 import styled from "styled-components/native";
 
-export const PreviewCardContainer = styled.TouchableOpacity`
+export const PreviewCardContainer = styled.View`
   flex: 1;
   min-height: 375px;
 `;
@@ -11,11 +11,27 @@ export const PreviewCardBackgroundImage = styled.ImageBackground`
 
 export const BackdropContainer = styled.View`
   flex: 1;
-  justify-content: flex-end;
+  justify-content: space-between;
 
   padding: ${({ theme }) => theme.SPACING.XL}px;
   border-radius: ${({ theme }) => theme.BORDER_RADIUS.LG}px;
   background-color: rgba(0, 0, 0, 0.4);
+`;
+
+export const PreviewCardHeaderContainer = styled.View`
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const PreviewCardHeaderIconContainer = styled.View`
+  padding: ${({ theme }) => theme.SPACING.LG}px;
+
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 999px;
 `;
 
 export const PreviewCardContent = styled.View`

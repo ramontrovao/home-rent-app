@@ -5,6 +5,7 @@ import { useNavigation } from "@react-navigation/native";
 import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import type { TNavigatorParams } from "@/routes/router.types";
 import { PreviewCardProps } from "./PreviewCard.types";
+import { TouchableOpacity } from "react-native";
 
 export const PreviewCard = ({
   home: {
@@ -17,7 +18,7 @@ export const PreviewCard = ({
     useNavigation<NativeStackNavigationProp<TNavigatorParams>>();
 
   return (
-    <S.PreviewCardContainer onPress={() => navigation.push("product")}>
+    <S.PreviewCardContainer>
       <S.PreviewCardBackgroundImage
         testID={`preview-card-background-image`}
         imageStyle={{
@@ -28,6 +29,28 @@ export const PreviewCard = ({
         }}
       >
         <S.BackdropContainer>
+          <S.PreviewCardHeaderContainer>
+            <TouchableOpacity onPress={() => navigation.goBack()}>
+              <S.PreviewCardHeaderIconContainer>
+                <Icon
+                  name="arrow-left"
+                  size={24}
+                  color={DEFAULT_THEME.COLORS.WHITE}
+                />
+              </S.PreviewCardHeaderIconContainer>
+            </TouchableOpacity>
+
+            <TouchableOpacity>
+              <S.PreviewCardHeaderIconContainer>
+                <Icon
+                  name="bookmark-outline"
+                  size={24}
+                  color={DEFAULT_THEME.COLORS.WHITE}
+                />
+              </S.PreviewCardHeaderIconContainer>
+            </TouchableOpacity>
+          </S.PreviewCardHeaderContainer>
+
           <S.PreviewCardContent>
             <S.PreviewCardTitle>{name}</S.PreviewCardTitle>
             <S.PreviewCardAddress>
