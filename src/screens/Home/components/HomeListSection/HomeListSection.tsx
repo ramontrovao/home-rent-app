@@ -3,7 +3,7 @@ import * as S from "./HomeListSection.styles";
 import type { HomeListSectionProps } from "./HomeListSection.types";
 import { type ListRenderItem } from "react-native";
 import { DEFAULT_THEME } from "@/styles/theme";
-import { HomeCard } from "./HomeListCard/HomeCard";
+import { HomeCard } from "./HomeCard/HomeCard";
 
 export const HomeListSection = ({ homes }: HomeListSectionProps) => {
   const renderItem: ListRenderItem<THome> = ({ item }) => (

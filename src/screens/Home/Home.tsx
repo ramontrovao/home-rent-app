@@ -12,7 +12,7 @@ export const Home = () => {
   const insets = useSafeAreaInsets();
 
   return (
-    <S.MainContainer
+    <S.HomeContainer
       style={{ paddingTop: insets.top, paddingBottom: insets.bottom }}
     >
       <Header />
@@ -23,6 +23,6 @@ export const Home = () => {
       <BestForYouSection homes={HOMES_MOCK} />
 
       <StatusBar style="auto" />
-    </S.MainContainer>
+    </S.HomeContainer>
   );
 };
