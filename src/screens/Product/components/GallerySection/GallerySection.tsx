@@ -22,7 +22,7 @@ export const GallerySection = () => {
       <PreviewCard selectedImage={selectedImage} home={HOMES_MOCK[0]} />
 
       <S.GalleryContainer>
-        <S.GalleryText>Gallery</S.GalleryText>
+        <S.GalleryTitle>Gallery</S.GalleryTitle>
 
         <S.GallerySlider
           data={HOMES_MOCK[0].imagesUri}
@@ -32,6 +32,12 @@ export const GallerySection = () => {
           horizontal
         />
       </S.GalleryContainer>
+
+      <S.DescriptionContainer>
+        <S.DescriptionTitle>Description</S.DescriptionTitle>
+
+        <S.DescriptionContent>{HOMES_MOCK[0].description}</S.DescriptionContent>
+      </S.DescriptionContainer>
     </S.GallerySectionContainer>
   );
 };
