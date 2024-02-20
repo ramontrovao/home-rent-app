@@ -9,10 +9,10 @@ import { TouchableOpacity } from "react-native";
 
 export const PreviewCard = ({
   home: {
-    imagesUri,
     name,
     address: { country, state, city },
   },
+  selectedImage,
 }: PreviewCardProps) => {
   const navigation =
     useNavigation<NativeStackNavigationProp<TNavigatorParams>>();
@@ -25,7 +25,7 @@ export const PreviewCard = ({
           borderRadius: DEFAULT_THEME.BORDER_RADIUS.LG,
         }}
         source={{
-          uri: imagesUri[0],
+          uri: selectedImage,
         }}
       >
         <S.BackdropContainer>
