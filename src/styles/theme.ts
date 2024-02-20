@@ -26,5 +26,6 @@ export const DEFAULT_THEME = {
     SM: 4,
     MD: 10,
     LG: 24,
+    XXXL: 999,
   },
 } as const;

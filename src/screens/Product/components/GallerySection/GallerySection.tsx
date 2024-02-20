@@ -1,8 +1,9 @@
 import * as S from "./GallerySection.styles";
 import { HOMES_MOCK } from "@/constants/mocks";
 import { PreviewCard } from "./PreviewCard/PreviewCard";
-import { FlatList, type ListRenderItem, TouchableOpacity } from "react-native";
+import { type ListRenderItem, TouchableOpacity } from "react-native";
 import { useState } from "react";
+import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 import { DEFAULT_THEME } from "@/styles/theme";
 
 export const GallerySection = () => {
@@ -38,6 +39,35 @@ export const GallerySection = () => {
 
         <S.DescriptionContent>{HOMES_MOCK[0].description}</S.DescriptionContent>
       </S.DescriptionContainer>
+
+      <S.OwnerContainer>
+        <S.OwnerContainerLeftWrapper>
+          <S.OwnerImage src={HOMES_MOCK[0].owner.photoUri} />
+
+          <S.OwnerInformation>
+            <S.OwnerTitle>{HOMES_MOCK[0].owner.name}</S.OwnerTitle>
+            <S.OwnerLabel>Owner</S.OwnerLabel>
+          </S.OwnerInformation>
+        </S.OwnerContainerLeftWrapper>
+
+        <S.OwnerContainerRightWrapper>
+          <TouchableOpacity>
+            <S.OwnerContainerInformationButton>
+              <Icon name="phone" size={24} color={DEFAULT_THEME.COLORS.WHITE} />
+            </S.OwnerContainerInformationButton>
+          </TouchableOpacity>
+
+          <TouchableOpacity>
+            <S.OwnerContainerInformationButton>
+              <Icon
+                name="message"
+                size={24}
+                color={DEFAULT_THEME.COLORS.WHITE}
+              />
+            </S.OwnerContainerInformationButton>
+          </TouchableOpacity>
+        </S.OwnerContainerRightWrapper>
+      </S.OwnerContainer>
     </S.GallerySectionContainer>
   );
 };
