@@ -1,5 +1,6 @@
 import { TAddress } from "./address";
 import type { THomeType } from "./home-type";
+import { TLocation } from "./location";
 import type { TOwner } from "./owner";
 
 export type THome = {
@@ -13,4 +14,5 @@ export type THome = {
   imagesUri: string[];
   type: THomeType;
   owner: TOwner;
+  location: TLocation;
 };
