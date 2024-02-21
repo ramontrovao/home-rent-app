@@ -3,6 +3,7 @@ import * as S from "./Product.styles";
 import { GallerySection } from "./components/GallerySection/GallerySection";
 import { DescriptionSection } from "./components/DescriptionSection/DescriptionSection";
 import { HOMES_MOCK } from "@/constants/mocks";
+import { OwnerSection } from "./components/OwnerSection/OwnerSection";
 
 const HOME_MOCK = HOMES_MOCK[0];
 
@@ -15,6 +16,7 @@ export const Product = () => {
     >
       <GallerySection />
       <DescriptionSection description={HOME_MOCK.description} />
+      <OwnerSection owner={HOME_MOCK.owner} />
     </S.ProductContainer>
   );
 };
