@@ -33,18 +33,6 @@ export const GallerySection = () => {
           horizontal
         />
       </S.GalleryContainer>
-
-      <S.PriceContainer>
-        <S.PriceContainerLeftWrapper>
-          <S.PriceTitle>Price</S.PriceTitle>
-
-          <S.PriceContent>Rp. 2.500.000.000 / Year</S.PriceContent>
-        </S.PriceContainerLeftWrapper>
-
-        <S.RentButton>
-          <S.RentText>Rent Now</S.RentText>
-        </S.RentButton>
-      </S.PriceContainer>
     </S.GallerySectionContainer>
   );
 };

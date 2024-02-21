@@ -1,7 +1,7 @@
 import styled from "styled-components/native";
 
 export const OwnerContainer = styled.View`
-  margin-top: ${({ theme }) => theme.SPACING.XXL}px;
+  padding: ${({ theme }) => theme.SPACING.XL}px;
 
   flex-direction: row;
   justify-content: space-between;
