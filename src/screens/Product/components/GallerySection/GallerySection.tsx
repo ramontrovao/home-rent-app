@@ -34,30 +34,6 @@ export const GallerySection = () => {
         />
       </S.GalleryContainer>
 
-      <S.MapContainer>
-        <MapView
-          provider="google"
-          initialRegion={{
-            latitude: -20.21863943939567,
-            longitude: -40.26249804541726,
-            latitudeDelta: 0.025,
-            longitudeDelta: 0.025,
-          }}
-          style={{
-            width: "100%",
-            height: "100%",
-            borderRadius: DEFAULT_THEME.BORDER_RADIUS.LG,
-          }}
-        >
-          <Marker
-            coordinate={{
-              latitude: -20.21863943939567,
-              longitude: -40.26249804541726,
-            }}
-          />
-        </MapView>
-      </S.MapContainer>
-
       <S.PriceContainer>
         <S.PriceContainerLeftWrapper>
           <S.PriceTitle>Price</S.PriceTitle>

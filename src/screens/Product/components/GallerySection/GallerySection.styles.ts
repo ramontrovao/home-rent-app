@@ -29,13 +29,6 @@ export const GalleryImage = styled.Image<GalleryImageStyledProps>`
     isSelected ? theme.COLORS.BLUE_300 : "transparent"};
 `;
 
-export const MapContainer = styled.View`
-  margin-top: ${({ theme }) => theme.SPACING.XXL}px;
-  min-height: 250px;
-
-  flex: 1;
-`;
-
 export const PriceContainer = styled.View`
   margin-top: ${({ theme }) => theme.SPACING.XXL}px;
 
