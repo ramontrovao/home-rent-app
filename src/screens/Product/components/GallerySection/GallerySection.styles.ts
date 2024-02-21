@@ -16,7 +16,7 @@ export const GallerySlider = styled(FlatList<string>)`
 
 export const GalleryTitle = styled.Text`
   color: ${({ theme }) => theme.COLORS.BLACK};
-  font-size: ${({ theme }) => theme.FONT_SIZES.MD};
+  font-size: ${({ theme }) => theme.FONT_SIZES.MD}px;
 `;
 
 export const GalleryImage = styled.Image<GalleryImageStyledProps>`
@@ -27,21 +27,6 @@ export const GalleryImage = styled.Image<GalleryImageStyledProps>`
   border-radius: ${({ theme }) => theme.BORDER_RADIUS.MD}px;
   border-color: ${({ theme, isSelected }) =>
     isSelected ? theme.COLORS.BLUE_300 : "transparent"};
-`;
-
-export const DescriptionContainer = styled.View`
-  margin-top: ${({ theme }) => theme.SPACING.XXL}px;
-`;
-
-export const DescriptionTitle = styled.Text`
-  color: ${({ theme }) => theme.COLORS.BLACK};
-  font-size: ${({ theme }) => theme.FONT_SIZES.MD};
-`;
-
-export const DescriptionContent = styled.Text`
-  color: ${({ theme }) => theme.COLORS.GRAY_200};
-  font-size: ${({ theme }) => theme.FONT_SIZES.MD};
-  margin-top: ${({ theme }) => theme.SPACING.MD}px;
 `;
 
 export const OwnerContainer = styled.View`
@@ -72,12 +57,12 @@ export const OwnerInformation = styled.View`
 
 export const OwnerTitle = styled.Text`
   color: ${({ theme }) => theme.COLORS.BLACK};
-  font-size: ${({ theme }) => theme.FONT_SIZES.MD};
+  font-size: ${({ theme }) => theme.FONT_SIZES.MD}px;
 `;
 
 export const OwnerLabel = styled.Text`
   color: ${({ theme }) => theme.COLORS.GRAY_200};
-  font-size: ${({ theme }) => theme.FONT_SIZES.MD};
+  font-size: ${({ theme }) => theme.FONT_SIZES.MD}px;
 `;
 
 export const OwnerContainerRightWrapper = styled.View`
@@ -97,6 +82,13 @@ export const OwnerContainerInformationButton = styled.View`
   background-color: ${({ theme }) => theme.COLORS.BLUE_300};
 `;
 
+export const MapContainer = styled.View`
+  margin-top: ${({ theme }) => theme.SPACING.XXL}px;
+  min-height: 250px;
+
+  flex: 1;
+`;
+
 export const PriceContainer = styled.View`
   margin-top: ${({ theme }) => theme.SPACING.XXL}px;
 
@@ -111,12 +103,12 @@ export const PriceContainerLeftWrapper = styled.View`
 
 export const PriceTitle = styled.Text`
   color: ${({ theme }) => theme.COLORS.GRAY_200};
-  font-size: ${({ theme }) => theme.FONT_SIZES.MD};
+  font-size: ${({ theme }) => theme.FONT_SIZES.MD}px;
 `;
 
 export const PriceContent = styled.Text`
   color: ${({ theme }) => theme.COLORS.BLACK};
-  font-size: ${({ theme }) => theme.FONT_SIZES.MD};
+  font-size: ${({ theme }) => theme.FONT_SIZES.MD}px;
 `;
 
 export const RentButton = styled.TouchableOpacity`
@@ -131,5 +123,5 @@ export const RentButton = styled.TouchableOpacity`
 
 export const RentText = styled.Text`
   color: ${({ theme }) => theme.COLORS.WHITE};
-  font-size: ${({ theme }) => theme.FONT_SIZES.MD};
+  font-size: ${({ theme }) => theme.FONT_SIZES.MD}px;
 `;

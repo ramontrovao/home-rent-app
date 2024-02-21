@@ -1,10 +1,11 @@
 import * as S from "./GallerySection.styles";
 import { HOMES_MOCK } from "@/constants/mocks";
 import { PreviewCard } from "./PreviewCard/PreviewCard";
-import { type ListRenderItem, TouchableOpacity } from "react-native";
+import { type ListRenderItem, TouchableOpacity, Text } from "react-native";
 import { useState } from "react";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 import { DEFAULT_THEME } from "@/styles/theme";
+import MapView, { Marker } from "react-native-maps";
 
 export const GallerySection = () => {
   const [imageSelectedIndex, setimageSelectedIndex] = useState(0);
@@ -34,12 +35,6 @@ export const GallerySection = () => {
         />
       </S.GalleryContainer>
 
-      <S.DescriptionContainer>
-        <S.DescriptionTitle>Description</S.DescriptionTitle>
-
-        <S.DescriptionContent>{HOMES_MOCK[0].description}</S.DescriptionContent>
-      </S.DescriptionContainer>
-
       <S.OwnerContainer>
         <S.OwnerContainerLeftWrapper>
           <S.OwnerImage src={HOMES_MOCK[0].owner.photoUri} />
@@ -68,6 +63,30 @@ export const GallerySection = () => {
           </TouchableOpacity>
         </S.OwnerContainerRightWrapper>
       </S.OwnerContainer>
+
+      <S.MapContainer>
+        <MapView
+          provider="google"
+          initialRegion={{
+            latitude: -20.21863943939567,
+            longitude: -40.26249804541726,
+            latitudeDelta: 0.025,
+            longitudeDelta: 0.025,
+          }}
+          style={{
+            width: "100%",
+            height: "100%",
+            borderRadius: DEFAULT_THEME.BORDER_RADIUS.LG,
+          }}
+        >
+          <Marker
+            coordinate={{
+              latitude: -20.21863943939567,
+              longitude: -40.26249804541726,
+            }}
+          />
+        </MapView>
+      </S.MapContainer>
 
       <S.PriceContainer>
         <S.PriceContainerLeftWrapper>
