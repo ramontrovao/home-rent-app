@@ -7,7 +7,7 @@ export const MapSection = ({
   location: { latitude, longitude },
 }: MapSectionProps) => {
   return (
-    <S.MapContainer>
+    <S.MapContainer testID="map-container">
       <MapView
         provider="google"
         initialRegion={{
