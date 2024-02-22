@@ -1,10 +1,10 @@
-import * as S from "./PreviewCard.styles";
+import * as S from "./styles";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 import { DEFAULT_THEME } from "@/styles/theme";
 import { useNavigation } from "@react-navigation/native";
 import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import type { TNavigatorParams } from "@/routes/router.types";
-import { PreviewCardProps } from "./PreviewCard.types";
+import { PreviewCardProps } from "./types";
 import { TouchableOpacity } from "react-native";
 
 export const PreviewCard = ({

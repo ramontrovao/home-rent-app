@@ -1,5 +1,5 @@
 import styled from "styled-components/native";
-import type { GalleryImageStyledProps } from "./GallerySection.types";
+import type { GalleryImageStyledProps } from "./types";
 import { FlatList } from "react-native";
 
 export const GallerySectionContainer = styled.View`

@@ -1,5 +1,5 @@
-import * as S from "./DescriptionSection.styles";
-import type { DescriptionSectionProps } from "./DescriptionSection.types";
+import * as S from "./styles";
+import type { DescriptionSectionProps } from "./types";
 
 export const DescriptionSection = ({
   description,

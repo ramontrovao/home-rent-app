@@ -1,11 +1,11 @@
+import * as S from "./styles";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import * as S from "./Product.styles";
-import { GallerySection } from "./components/GallerySection/GallerySection";
-import { DescriptionSection } from "./components/DescriptionSection/DescriptionSection";
+import { GallerySection } from "./components/GallerySection";
+import { DescriptionSection } from "./components/DescriptionSection";
 import { HOMES_MOCK } from "@/constants/mocks";
-import { OwnerSection } from "./components/OwnerSection/OwnerSection";
-import { MapSection } from "./components/MapSection/MapSection";
-import { PriceSection } from "./components/PriceSection/PriceSection";
+import { OwnerSection } from "./components/OwnerSection";
+import { MapSection } from "./components/MapSection";
+import { PriceSection } from "./components/PriceSection";
 import { View } from "react-native";
 import { StatusBar } from "expo-status-bar";
 

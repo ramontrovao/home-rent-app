@@ -1,5 +1,5 @@
 import { render, screen } from "@/utils/test-utils";
-import { OwnerSection } from "./OwnerSection";
+import { OwnerSection } from ".";
 import { HOMES_MOCK } from "@/constants/mocks";
 
 const OWNER_MOCK = HOMES_MOCK[0].owner;

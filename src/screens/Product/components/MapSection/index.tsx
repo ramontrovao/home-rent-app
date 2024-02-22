@@ -1,7 +1,7 @@
+import * as S from "./styles";
 import { DEFAULT_THEME } from "@/styles/theme";
-import * as S from "./MapSection.styles";
 import MapView, { Marker } from "react-native-maps";
-import { MapSectionProps } from "./MapSection.types";
+import { MapSectionProps } from "./types";
 
 export const MapSection = ({
   location: { latitude, longitude },
