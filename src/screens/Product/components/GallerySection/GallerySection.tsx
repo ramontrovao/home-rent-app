@@ -14,7 +14,11 @@ export const GallerySection = ({ home }: GallerySectionProps) => {
   const renderImages: ListRenderItem<string> = ({ item, index }) => {
     return (
       <TouchableOpacity onPress={() => setimageSelectedIndex(index)}>
-        <S.GalleryImage isSelected={imageSelectedIndex === index} src={item} />
+        <S.GalleryImage
+          testID={`gallery-image-${index}`}
+          isSelected={imageSelectedIndex === index}
+          source={{ uri: item }}
+        />
       </TouchableOpacity>
     );
   };

@@ -11,6 +11,8 @@ export const PreviewCard = ({
   home: {
     name,
     address: { country, state, city },
+    bathromsQuantity,
+    bedroomsQuantity,
   },
   selectedImage,
 }: PreviewCardProps) => {
@@ -68,7 +70,7 @@ export const PreviewCard = ({
                 </S.PreviewCardInformationIconContainer>
 
                 <S.PreviewCardInformationText>
-                  6 Bedroom
+                  {bedroomsQuantity} Bedroom
                 </S.PreviewCardInformationText>
               </S.PreviewCardInformationContainer>
 
@@ -82,7 +84,7 @@ export const PreviewCard = ({
                 </S.PreviewCardInformationIconContainer>
 
                 <S.PreviewCardInformationText>
-                  6 Bathroom
+                  {bathromsQuantity} Bathroom
                 </S.PreviewCardInformationText>
               </S.PreviewCardInformationContainer>
             </S.PreviewCardInformationWrapper>
