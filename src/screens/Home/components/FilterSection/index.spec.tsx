@@ -1,5 +1,5 @@
 import { fireEvent, render, screen } from "@/utils/test-utils";
-import { FilterSection } from "./FilterSection";
+import { FilterSection } from ".";
 import { ThemeProvider } from "styled-components/native";
 import { DEFAULT_THEME } from "@/styles/theme";
 

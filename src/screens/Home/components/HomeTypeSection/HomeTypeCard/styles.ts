@@ -1,5 +1,5 @@
 import styled from "styled-components/native";
-import type { HomeTypeCardContainerStyledProps } from "./HomeTypeCard.types";
+import type { HomeTypeCardContainerStyledProps } from "./types";
 
 export const HomeTypeCardContainer = styled.TouchableOpacity<HomeTypeCardContainerStyledProps>`
   padding: ${({ theme }) => theme.SPACING.LG}px;

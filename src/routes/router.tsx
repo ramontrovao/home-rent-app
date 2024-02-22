@@ -1,4 +1,4 @@
-import { Home } from "@/screens/Home/Home";
+import { Home } from "@/screens/Home";
 import { Product } from "@/screens/Product/Product";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import type { TNavigatorParams } from "./router.types";

@@ -1,5 +1,5 @@
 import styled from "styled-components/native";
-import type { THomeType } from "./HomeTypeSection.types";
+import type { THomeType } from "./types";
 import { FlatList } from "react-native";
 
 export const HomeTypeSectionContainer = styled(FlatList<THomeType>)`

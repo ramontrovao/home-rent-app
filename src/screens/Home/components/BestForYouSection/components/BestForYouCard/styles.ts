@@ -1,5 +1,5 @@
 import styled from "styled-components/native";
-import type { HomeInfoWrapperStyledProps } from "./BestForYouCard.types";
+import type { HomeInfoWrapperStyledProps } from "./types";
 
 export const BestForYouCardContainer = styled.TouchableOpacity<HomeInfoWrapperStyledProps>`
   padding-bottom: ${({ hasPadding, theme }) =>

@@ -1,6 +1,6 @@
 import { render, screen } from "@/utils/test-utils";
 import { HOMES_MOCK } from "@/constants/mocks";
-import { BestForYouSection } from "./BestForYouSection";
+import { BestForYouSection } from ".";
 
 const HOME_MOCK = HOMES_MOCK[0];
 

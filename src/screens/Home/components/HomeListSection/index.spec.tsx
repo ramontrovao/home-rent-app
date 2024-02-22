@@ -1,5 +1,5 @@
 import { render, screen } from "@/utils/test-utils";
-import { HomeListSection } from "./HomeListSection";
+import { HomeListSection } from ".";
 import { HOMES_MOCK } from "@/constants/mocks";
 
 describe("Component - <HomeListSection />", () => {

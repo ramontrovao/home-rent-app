@@ -1,9 +1,9 @@
+import * as S from "./styles";
 import { THome } from "@/types/home";
-import * as S from "./HomeListSection.styles";
-import type { HomeListSectionProps } from "./HomeListSection.types";
+import type { HomeListSectionProps } from "./types";
 import { type ListRenderItem } from "react-native";
 import { DEFAULT_THEME } from "@/styles/theme";
-import { HomeCard } from "./HomeCard/HomeCard";
+import { HomeCard } from "./HomeCard";
 
 export const HomeListSection = ({ homes }: HomeListSectionProps) => {
   const renderItem: ListRenderItem<THome> = ({ item }) => (

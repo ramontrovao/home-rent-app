@@ -1,5 +1,5 @@
+import * as S from "./styles";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
-import * as S from "./FilterSection.styles";
 import { DEFAULT_THEME } from "@/styles/theme";
 import { useState } from "react";
 

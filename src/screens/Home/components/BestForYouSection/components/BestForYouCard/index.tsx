@@ -1,6 +1,6 @@
-import * as S from "./BestForYouCard.styles";
+import * as S from "./styles";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
-import type { BestForYouCardProps } from "./BestForYouCard.types";
+import type { BestForYouCardProps } from "./types";
 import { DEFAULT_THEME } from "@/styles/theme";
 import { useNavigation } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";

@@ -1,5 +1,5 @@
 import { render, screen } from "@/utils/test-utils";
-import { HomeCard } from "./HomeCard";
+import { HomeCard } from ".";
 import { HOMES_MOCK } from "@/constants/mocks";
 
 const HOME_MOCK = HOMES_MOCK[0];

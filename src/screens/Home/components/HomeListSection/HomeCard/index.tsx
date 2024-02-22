@@ -1,6 +1,6 @@
-import * as S from "./HomesCard.styles";
+import * as S from "./styles";
 import { DEFAULT_THEME } from "@/styles/theme";
-import type { HomeCardProps } from "./HomeCard.types";
+import type { HomeCardProps } from "./types";
 import { useNavigation } from "@react-navigation/native";
 import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import type { TNavigatorParams } from "@/routes/router.types";
