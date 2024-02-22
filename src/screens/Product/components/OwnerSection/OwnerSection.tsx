@@ -8,7 +8,7 @@ export const OwnerSection = ({ owner }: OwnerSectionProps) => {
   return (
     <S.OwnerContainer>
       <S.OwnerContainerLeftWrapper>
-        <S.OwnerImage src={owner.photoUri} />
+        <S.OwnerImage testID="owner-image" source={{ uri: owner.photoUri }} />
 
         <S.OwnerInformation>
           <S.OwnerTitle>{owner.name}</S.OwnerTitle>
