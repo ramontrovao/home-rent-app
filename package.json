@@ -10,7 +10,7 @@
     "ts:check": "tsc",
     "commit-lint": "commitlint --edit $1",
     "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx .",
-    "format": "prettier-eslint './**/*.{js,jsx,ts,tsx,json}' --write",
+    "format": "prettier-eslint --write $PWD'/**/*.{js,jsx,ts,tsx,json}'",
     "prepare": "husky"
   },
   "jest": {
