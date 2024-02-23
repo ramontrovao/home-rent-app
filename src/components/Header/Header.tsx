@@ -1,7 +1,6 @@
-import Icon from "react-native-vector-icons/MaterialCommunityIcons";
-import RNPickerSelect from "react-native-picker-select";
-import * as S from "./Header.styles";
-import { TouchableOpacity } from "react-native";
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import * as S from './Header.styles';
+import { TouchableOpacity } from 'react-native';
 
 export const Header = () => {
   return (

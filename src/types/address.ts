@@ -9,4 +9,4 @@ export type TAddress = {
   zipCode: string;
   latitude?: number;
   longitude?: number;
-}
+};

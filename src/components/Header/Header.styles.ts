@@ -1,4 +1,4 @@
-import styled from "styled-components/native";
+import styled from 'styled-components/native';
 
 export const HeaderContainer = styled.View`
   padding: ${({ theme }) => theme.SPACING.XL}px;

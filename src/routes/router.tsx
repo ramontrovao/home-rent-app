@@ -1,7 +1,7 @@
-import { Home } from "@/screens/Home";
-import { Product } from "@/screens/Product";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import type { TNavigatorParams } from "./router.types";
+import { Home } from '@/screens/Home';
+import { Product } from '@/screens/Product';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import type { TNavigatorParams } from './router.types';
 
 const { Navigator, Screen } = createNativeStackNavigator<TNavigatorParams>();
 

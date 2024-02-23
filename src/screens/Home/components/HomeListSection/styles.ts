@@ -1,6 +1,6 @@
-import { THome } from "@/types/home";
-import { FlatList } from "react-native";
-import styled from "styled-components/native";
+import { THome } from '@/types/home';
+import { FlatList } from 'react-native';
+import styled from 'styled-components/native';
 
 export const HomeListSectionContainer = styled(FlatList<THome>)`
   flex: 1;

@@ -2,9 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
+      "@/*": ["./src/*"]
     },
     "target": "es2016",
     "module": "commonjs",
@@ -14,9 +12,5 @@
     "skipLibCheck": true
   },
   "extends": "expo/tsconfig.base",
-  "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    "babel.config.js"
-  ]
+  "include": ["**/*.ts", "**/*.tsx", "babel.config.js"]
 }

@@ -1,13 +1,13 @@
-import * as S from "./styles";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { GallerySection } from "./components/GallerySection";
-import { DescriptionSection } from "./components/DescriptionSection";
-import { HOMES_MOCK } from "@/constants/mocks";
-import { OwnerSection } from "./components/OwnerSection";
-import { MapSection } from "./components/MapSection";
-import { PriceSection } from "./components/PriceSection";
-import { View } from "react-native";
-import { StatusBar } from "expo-status-bar";
+import * as S from './styles';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { GallerySection } from './components/GallerySection';
+import { DescriptionSection } from './components/DescriptionSection';
+import { HOMES_MOCK } from '@/constants/mocks';
+import { OwnerSection } from './components/OwnerSection';
+import { MapSection } from './components/MapSection';
+import { PriceSection } from './components/PriceSection';
+import { View } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
 
 const HOME_MOCK = HOMES_MOCK[0];
 

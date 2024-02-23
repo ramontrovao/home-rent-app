@@ -1,7 +1,7 @@
-import { TouchableOpacity } from "react-native";
-import * as S from "./styles";
-import type { BestForYouSectionProps } from "./types";
-import { BestForYouCard } from "./components/BestForYouCard";
+import { TouchableOpacity } from 'react-native';
+import * as S from './styles';
+import type { BestForYouSectionProps } from './types';
+import { BestForYouCard } from './components/BestForYouCard';
 
 export const BestForYouSection = ({ homes }: BestForYouSectionProps) => {
   return (

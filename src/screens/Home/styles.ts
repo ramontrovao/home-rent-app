@@ -1,4 +1,4 @@
-import styled from "styled-components/native";
+import styled from 'styled-components/native';
 
 export const HomeContainer = styled.ScrollView`
   flex: 1;

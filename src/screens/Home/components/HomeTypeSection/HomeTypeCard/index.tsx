@@ -1,5 +1,5 @@
-import * as S from "./styles";
-import { HomeTypeCardProps } from "./types";
+import * as S from './styles';
+import { HomeTypeCardProps } from './types';
 
 export const HomeTypeCard = ({
   homeType,
