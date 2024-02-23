@@ -1,4 +1,4 @@
-import styled from "styled-components/native";
+import styled from 'styled-components/native';
 
 export const MapContainer = styled.View`
   padding: ${({ theme }) => theme.SPACING.XL}px;

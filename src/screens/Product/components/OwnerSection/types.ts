@@ -1,3 +1,3 @@
-import { THome } from "@/types/home";
+import { THome } from '@/types/home';
 
-export type OwnerSectionProps = Pick<THome, "owner">;
+export type OwnerSectionProps = Pick<THome, 'owner'>;

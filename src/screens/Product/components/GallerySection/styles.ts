@@ -1,6 +1,6 @@
-import styled from "styled-components/native";
-import type { GalleryImageStyledProps } from "./types";
-import { FlatList } from "react-native";
+import styled from 'styled-components/native';
+import type { GalleryImageStyledProps } from './types';
+import { FlatList } from 'react-native';
 
 export const GallerySectionContainer = styled.View`
   padding: ${({ theme }) => theme.SPACING.XL}px;
@@ -26,5 +26,5 @@ export const GalleryImage = styled.Image<GalleryImageStyledProps>`
   border-width: 2px;
   border-radius: ${({ theme }) => theme.BORDER_RADIUS.MD}px;
   border-color: ${({ theme, isSelected }) =>
-    isSelected ? theme.COLORS.BLUE_300 : "transparent"};
+    isSelected ? theme.COLORS.BLUE_300 : 'transparent'};
 `;

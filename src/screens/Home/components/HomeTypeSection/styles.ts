@@ -1,6 +1,6 @@
-import styled from "styled-components/native";
-import type { THomeType } from "./types";
-import { FlatList } from "react-native";
+import styled from 'styled-components/native';
+import type { THomeType } from './types';
+import { FlatList } from 'react-native';
 
 export const HomeTypeSectionContainer = styled(FlatList<THomeType>)`
   margin-top: ${({ theme }) => theme.SPACING.LG}px;

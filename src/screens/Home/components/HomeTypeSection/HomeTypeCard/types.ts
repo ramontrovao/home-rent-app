@@ -1,4 +1,4 @@
-import type { TouchableOpacityProps } from "react-native";
+import type { TouchableOpacityProps } from 'react-native';
 
 export interface HomeTypeCardProps extends TouchableOpacityProps {
   homeType: string;

@@ -1,9 +1,9 @@
-import * as S from "./styles";
-import { DEFAULT_THEME } from "@/styles/theme";
-import type { HomeCardProps } from "./types";
-import { useNavigation } from "@react-navigation/native";
-import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
-import type { TNavigatorParams } from "@/routes/router.types";
+import * as S from './styles';
+import { DEFAULT_THEME } from '@/styles/theme';
+import type { HomeCardProps } from './types';
+import { useNavigation } from '@react-navigation/native';
+import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import type { TNavigatorParams } from '@/routes/router.types';
 
 export const HomeCard = ({
   home: {
@@ -16,7 +16,7 @@ export const HomeCard = ({
     useNavigation<NativeStackNavigationProp<TNavigatorParams>>();
 
   return (
-    <S.HomeCardContainer onPress={() => navigation.push("product")}>
+    <S.HomeCardContainer onPress={() => navigation.push('product')}>
       <S.HomeCardBackgroundImage
         testID={`home-background-image`}
         imageStyle={{

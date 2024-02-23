@@ -1,7 +1,7 @@
-import * as S from "./styles";
-import { DEFAULT_THEME } from "@/styles/theme";
-import MapView, { Marker } from "react-native-maps";
-import { MapSectionProps } from "./types";
+import * as S from './styles';
+import { DEFAULT_THEME } from '@/styles/theme';
+import MapView, { Marker } from 'react-native-maps';
+import { MapSectionProps } from './types';
 
 export const MapSection = ({
   location: { latitude, longitude },
@@ -17,8 +17,8 @@ export const MapSection = ({
           longitudeDelta: 0.025,
         }}
         style={{
-          width: "100%",
-          height: "100%",
+          width: '100%',
+          height: '100%',
           borderRadius: DEFAULT_THEME.BORDER_RADIUS.LG,
         }}
       >

@@ -1,1 +1,1 @@
-export type THomeType = "house" | "apartment" | "hotel" | "villa";
+export type THomeType = 'house' | 'apartment' | 'hotel' | 'villa';

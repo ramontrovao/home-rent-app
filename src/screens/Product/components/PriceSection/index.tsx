@@ -1,5 +1,5 @@
-import * as S from "./styles";
-import { PriceSectionProps } from "./types";
+import * as S from './styles';
+import { PriceSectionProps } from './types';
 
 export const PriceSection = ({ price }: PriceSectionProps) => {
   return (

@@ -1,4 +1,4 @@
-import { THome } from "@/types/home";
+import { THome } from '@/types/home';
 
 export interface BestForYouCardProps {
   home: THome;

@@ -1,10 +1,10 @@
-import * as S from "./styles";
-import { HOMES_MOCK } from "@/constants/mocks";
-import { PreviewCard } from "./PreviewCard";
-import { type ListRenderItem, TouchableOpacity } from "react-native";
-import { useState } from "react";
-import { DEFAULT_THEME } from "@/styles/theme";
-import { GallerySectionProps } from "./types";
+import * as S from './styles';
+import { HOMES_MOCK } from '@/constants/mocks';
+import { PreviewCard } from './PreviewCard';
+import { type ListRenderItem, TouchableOpacity } from 'react-native';
+import { useState } from 'react';
+import { DEFAULT_THEME } from '@/styles/theme';
+import { GallerySectionProps } from './types';
 
 export const GallerySection = ({ home }: GallerySectionProps) => {
   const [imageSelectedIndex, setimageSelectedIndex] = useState(0);

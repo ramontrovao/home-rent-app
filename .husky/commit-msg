@@ -1,0 +1,4 @@
+npx --no -- commitlint --edit $1
+yarn lint
+yarn format
+yarn test
