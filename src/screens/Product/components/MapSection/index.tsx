@@ -1,6 +1,6 @@
-import * as S from './styles';
-import { DEFAULT_THEME } from '@/styles/theme';
+import { DEFAULT_THEME } from '@styles/theme';
 import MapView, { Marker } from 'react-native-maps';
+import * as S from './styles';
 import { MapSectionProps } from './types';
 
 export const MapSection = ({

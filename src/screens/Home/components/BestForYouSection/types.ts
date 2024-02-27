@@ -1,4 +1,4 @@
-import type { THome } from '@/types/home';
+import type { THome } from '@type/home';
 
 export interface BestForYouSectionProps {
   homes: THome[];

@@ -1,7 +1,7 @@
-import * as S from './styles';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import { DEFAULT_THEME } from '@/styles/theme';
+import { DEFAULT_THEME } from '@styles/theme';
 import { useState } from 'react';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import * as S from './styles';
 
 export const FilterSection = () => {
   const [searchQuery, setSearchQuery] = useState('');

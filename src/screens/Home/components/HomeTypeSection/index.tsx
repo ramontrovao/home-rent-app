@@ -1,9 +1,9 @@
-import * as S from './styles';
-import { type ListRenderItem } from 'react-native';
-import type { HomeTypeSectionProps, THomeType } from './types';
+import { DEFAULT_THEME } from '@styles/theme';
 import { useState } from 'react';
-import { DEFAULT_THEME } from '@/styles/theme';
+import { type ListRenderItem } from 'react-native';
 import { HomeTypeCard } from './HomeTypeCard';
+import * as S from './styles';
+import type { HomeTypeSectionProps, THomeType } from './types';
 
 export const HomeTypeSection = ({ homeTypes }: HomeTypeSectionProps) => {
   const [selectedItem, setSelectedItem] = useState<number | null>(1);

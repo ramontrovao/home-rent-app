@@ -1,6 +1,6 @@
-import { render, screen } from '@/utils/test-utils';
-import { HOMES_MOCK } from '@/constants/mocks';
 import { BestForYouSection } from '.';
+import { render, screen } from '@utils/test-utils';
+import { HOMES_MOCK } from '@constants/mocks';
 
 describe('Component - <BestForYouSection />', () => {
   const makeSut = () => render(<BestForYouSection homes={HOMES_MOCK} />);

@@ -1,7 +1,7 @@
-import { fireEvent, render, screen } from '@/utils/test-utils';
-import { FilterSection } from '.';
+import { DEFAULT_THEME } from '@styles/theme';
+import { fireEvent, render, screen } from '@utils/test-utils';
 import { ThemeProvider } from 'styled-components/native';
-import { DEFAULT_THEME } from '@/styles/theme';
+import { FilterSection } from '.';
 
 const EXPECTED_SEARCH_QUERY = 'Beach';
 

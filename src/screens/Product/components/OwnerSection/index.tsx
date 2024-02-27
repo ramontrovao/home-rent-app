@@ -1,7 +1,7 @@
-import * as S from './styles';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import { DEFAULT_THEME } from '@/styles/theme';
+import { DEFAULT_THEME } from '@styles/theme';
 import { TouchableOpacity } from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import * as S from './styles';
 import { OwnerSectionProps } from './types';
 
 export const OwnerSection = ({ owner }: OwnerSectionProps) => {

@@ -1,9 +1,9 @@
-import * as S from './styles';
-import { HOMES_MOCK } from '@/constants/mocks';
-import { PreviewCard } from './PreviewCard';
-import { type ListRenderItem, TouchableOpacity } from 'react-native';
+import { HOMES_MOCK } from '@constants/mocks';
+import { DEFAULT_THEME } from '@styles/theme';
 import { useState } from 'react';
-import { DEFAULT_THEME } from '@/styles/theme';
+import { TouchableOpacity, type ListRenderItem } from 'react-native';
+import { PreviewCard } from './PreviewCard';
+import * as S from './styles';
 import { GallerySectionProps } from './types';
 
 export const GallerySection = ({ home }: GallerySectionProps) => {

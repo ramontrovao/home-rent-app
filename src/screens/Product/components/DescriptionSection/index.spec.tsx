@@ -1,4 +1,4 @@
-import { render, screen } from '@/utils/test-utils';
+import { render, screen } from '@utils/test-utils';
 import { DescriptionSection } from '.';
 
 const makeSut = () => render(<DescriptionSection description="Test" />);

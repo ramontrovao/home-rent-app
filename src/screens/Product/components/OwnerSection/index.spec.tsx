@@ -1,6 +1,6 @@
-import { render, screen } from '@/utils/test-utils';
+import { HOMES_MOCK } from '@constants/mocks';
+import { render, screen } from '@utils/test-utils';
 import { OwnerSection } from '.';
-import { HOMES_MOCK } from '@/constants/mocks';
 
 const OWNER_MOCK = HOMES_MOCK[0].owner;
 const makeSut = () => render(<OwnerSection owner={OWNER_MOCK} />);

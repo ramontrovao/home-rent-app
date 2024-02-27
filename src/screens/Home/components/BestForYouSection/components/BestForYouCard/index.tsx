@@ -1,10 +1,10 @@
-import * as S from './styles';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import type { BestForYouCardProps } from './types';
-import { DEFAULT_THEME } from '@/styles/theme';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
-import type { TNavigatorParams } from '@/routes/router.types';
+import type { TNavigatorParams } from '@routes/router.types';
+import { DEFAULT_THEME } from '@styles/theme';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import * as S from './styles';
+import type { BestForYouCardProps } from './types';
 
 export const BestForYouCard = ({
   home: { name, price, bedroomsQuantity, bathromsQuantity, imagesUri },
