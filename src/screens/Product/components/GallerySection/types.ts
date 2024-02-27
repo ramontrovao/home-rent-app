@@ -1,4 +1,4 @@
-import { THome } from '@/types/home';
+import { THome } from '@type/home';
 
 export interface GallerySectionProps {
   home: THome;

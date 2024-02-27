@@ -1,6 +1,6 @@
 import 'styled-components';
 
-import { DEFAULT_THEME } from '@/styles/theme';
+import { DEFAULT_THEME } from '@styles/theme';
 
 export type TDefaultTheme = typeof DEFAULT_THEME;
 

@@ -1,6 +1,6 @@
-import { render, screen } from '@/utils/test-utils';
+import { HOMES_MOCK } from '@constants/mocks';
+import { render, screen } from '@utils/test-utils';
 import { HomeCard } from '.';
-import { HOMES_MOCK } from '@/constants/mocks';
 
 const HOME_MOCK = HOMES_MOCK[0];
 const makeSut = () => render(<HomeCard home={HOME_MOCK} />);

@@ -1,9 +1,9 @@
-import * as S from './styles';
-import { DEFAULT_THEME } from '@/styles/theme';
-import type { HomeCardProps } from './types';
 import { useNavigation } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
-import type { TNavigatorParams } from '@/routes/router.types';
+import type { TNavigatorParams } from '@routes/router.types';
+import { DEFAULT_THEME } from '@styles/theme';
+import * as S from './styles';
+import type { HomeCardProps } from './types';
 
 export const HomeCard = ({
   home: {

@@ -1,4 +1,4 @@
-import { render, screen } from '@/utils/test-utils';
+import { render, screen } from '@utils/test-utils';
 import { PriceSection } from '.';
 
 const makeSut = () => render(<PriceSection price={50} />);
