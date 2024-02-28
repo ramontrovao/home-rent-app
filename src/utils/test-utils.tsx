@@ -1,13 +1,16 @@
-import type { ReactElement, ReactNode } from 'react';
-import { type RenderOptions, render } from '@testing-library/react-native';
-import { ThemeProvider } from 'styled-components/native';
+import { TanstackProvider } from '@/contexts/TanstackProvider';
 import { NavigationContainer } from '@react-navigation/native';
 import { DEFAULT_THEME } from '@styles/theme';
+import { render, type RenderOptions } from '@testing-library/react-native';
+import type { ReactElement, ReactNode } from 'react';
+import { ThemeProvider } from 'styled-components/native';
 
 const AllTheProviders = ({ children }: { children: ReactNode }) => {
   return (
     <ThemeProvider theme={DEFAULT_THEME}>
-      <NavigationContainer>{children}</NavigationContainer>
+      <TanstackProvider>
+        <NavigationContainer>{children}</NavigationContainer>
+      </TanstackProvider>
     </ThemeProvider>
   );
 };
