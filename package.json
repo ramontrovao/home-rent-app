@@ -5,7 +5,7 @@
     "start": "expo start",
     "android": "expo start --android",
     "test": "jest --silent",
-    "server": "json-server --watch ./src/data/db.json",
+    "server": "json-server --watch --delay 3000 ./src/data/db.json",
     "ios": "expo start --ios",
     "web": "expo start --web",
     "ts:check": "tsc",
