@@ -10,7 +10,7 @@ export const useHome = () => {
       queryFn: getHomes,
     });
 
-    return { ...data };
+    return data;
   };
 
   return { getAllHomes };

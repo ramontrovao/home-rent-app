@@ -2,18 +2,42 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"],
-      "@routes/*": ["./src/routes/*"],
-      "@styles/*": ["./src/styles/*"],
-      "@components/*": ["./src/components/*"],
-      "@utils/*": ["./src/utils/*"],
-      "@type/*": ["./src/type/*"],
-      "@constants/*": ["./src/constants/*"],
-      "@screens/*": ["./src/screens/*"],
-      "@contexts/*": ["./src/contexts/*"],
-      "@hooks/*": ["./src/hooks/*"],
-      "@services/*": ["./src/services/*"],
-      "@lib/*": ["./src/lib/*"]
+      "@/*": [
+        "./src/*"
+      ],
+      "@routes/*": [
+        "./src/routes/*"
+      ],
+      "@styles/*": [
+        "./src/styles/*"
+      ],
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@utils/*": [
+        "./src/utils/*"
+      ],
+      "@type/*": [
+        "./src/type/*"
+      ],
+      "@constants/*": [
+        "./src/constants/*"
+      ],
+      "@screens/*": [
+        "./src/screens/*"
+      ],
+      "@contexts/*": [
+        "./src/contexts/*"
+      ],
+      "@hooks/*": [
+        "./src/hooks/*"
+      ],
+      "@services/*": [
+        "./src/services/*"
+      ],
+      "@lib/*": [
+        "./src/lib/*"
+      ]
     },
     "target": "es2016",
     "module": "commonjs",
@@ -23,5 +47,9 @@
     "skipLibCheck": true
   },
   "extends": "expo/tsconfig.base",
-  "include": ["**/*.ts", "**/*.tsx", "babel.config.js"]
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "babel.config.js"
+  ]
 }

@@ -4,6 +4,7 @@ import { useHome } from '@hooks/useHome';
 import { StatusBar } from 'expo-status-bar';
 import { View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { Loading } from '../Loading';
 import { BestForYouSection } from './components/BestForYouSection';
 import { FilterSection } from './components/FilterSection';
 import { HomeListSection } from './components/HomeListSection';
@@ -17,11 +18,7 @@ export const Home = () => {
 
   return (
     <>
-      {isLoading && (
-        <S.LoadingContainer>
-          <S.LoadingText>Loading...</S.LoadingText>
-        </S.LoadingContainer>
-      )}
+      {isLoading && <Loading />}
 
       {!isLoading && homesData && (
         <S.HomeContainer>
