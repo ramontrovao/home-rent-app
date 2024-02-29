@@ -6,6 +6,14 @@ export const HomeContainer = styled.ScrollView`
   background: ${({ theme }) => theme.COLORS.GRAY_BACKGROUND_100};
 `;
 
-export const Text = styled.Text`
-  color: ${({ theme }) => theme.COLORS.BLACK};
+export const LoadingContainer = styled.View`
+  flex: 1;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const LoadingText = styled.Text`
+  font-size: ${({ theme }) => theme.FONT_SIZES.MD}px;
+  color: ${({ theme }) => theme.COLORS.BLUE_300};
 `;

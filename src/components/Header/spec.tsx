@@ -1,5 +1,5 @@
-import { Header } from './Header';
 import { render, screen } from '@utils/test-utils';
+import { Header } from '.';
 
 describe('Component - <Header />', () => {
   const makeSut = () => render(<Header />);
