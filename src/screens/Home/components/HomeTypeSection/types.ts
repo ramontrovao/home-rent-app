@@ -1,7 +1,4 @@
-export type THomeType = {
-  name: string;
-  id: number;
-};
+import { THomeType } from "@type/home-type";
 
 export interface HomeTypeSectionProps {
   homeTypes: THomeType[];

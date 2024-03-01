@@ -10,6 +10,7 @@ export type THome = {
   price: number;
   bedroomsQuantity: number;
   bathromsQuantity: number;
+  homeType: THomeType
   address: TAddress;
   imagesUri: string[];
   type: THomeType;

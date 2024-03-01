@@ -3,7 +3,8 @@ import { useState } from 'react';
 import { type ListRenderItem } from 'react-native';
 import { HomeTypeCard } from './HomeTypeCard';
 import * as S from './styles';
-import type { HomeTypeSectionProps, THomeType } from './types';
+import type { HomeTypeSectionProps } from './types';
+import { THomeType } from '@type/home-type';
 
 export const HomeTypeSection = ({ homeTypes }: HomeTypeSectionProps) => {
   const [selectedItem, setSelectedItem] = useState<number | null>(1);

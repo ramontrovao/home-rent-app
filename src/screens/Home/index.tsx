@@ -1,5 +1,4 @@
 import { Header } from '@components/Header';
-import { HOME_TYPES_MOCK } from '@constants/mocks';
 import { useHome } from '@hooks/useHome';
 import { StatusBar } from 'expo-status-bar';
 import { View } from 'react-native';
@@ -13,8 +12,12 @@ import * as S from './styles';
 
 export const Home = () => {
   const insets = useSafeAreaInsets();
-  const { getAllHomes } = useHome();
-  const { data: homesData, isLoading } = getAllHomes();
+  const { getHomes, getHomeTypes } = useHome();
+  const { data: homesData, isLoading: isHomesLoading } = getHomes();
+  const { data: homeTypesData, isLoading: isHomeTypesLoading } = getHomeTypes();
+
+  const isLoading =
+    isHomeTypesLoading || isHomesLoading || !homesData || !homeTypesData;
 
   return (
     <>
@@ -29,7 +32,7 @@ export const Home = () => {
               <Header />
 
               <FilterSection />
-              <HomeTypeSection homeTypes={HOME_TYPES_MOCK} />
+              <HomeTypeSection homeTypes={homeTypesData} />
               <HomeListSection homes={homesData} />
               <BestForYouSection homes={homesData} />
             </View>
