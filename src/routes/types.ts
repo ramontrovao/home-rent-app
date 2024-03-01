@@ -1,10 +1,10 @@
-import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 export type TNavigatorParams = {
   home: undefined;
   product: {
-    id: number
+    id: number;
   };
 };
 
-export type TStackNavigationProps = NativeStackNavigationProp<TNavigatorParams>
+export type TStackNavigationProps = NativeStackNavigationProp<TNavigatorParams>;
