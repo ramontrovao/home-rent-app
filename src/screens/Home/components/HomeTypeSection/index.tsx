@@ -1,27 +1,41 @@
 import { DEFAULT_THEME } from '@styles/theme';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { type ListRenderItem } from 'react-native';
 import { HomeTypeCard } from './HomeTypeCard';
 import * as S from './styles';
 import type { HomeTypeSectionProps } from './types';
-import { THomeType } from '@type/home-type';
+import { THomeType, THomeTypeNames } from '@type/home-type';
+import { useHome } from '@/hooks/useHome';
 
 export const HomeTypeSection = ({ homeTypes }: HomeTypeSectionProps) => {
-  const [selectedItem, setSelectedItem] = useState<number | null>(1);
+  const [selectedHomeTypeName, setSelectedHomeTypeName] = useState<THomeTypeNames | null>(
+    null
+  );
+  const { getHomes } = useHome();
 
-  const renderItem: ListRenderItem<THomeType> = ({ item }) => {
-    const isSelected = selectedItem === item.id;
+  const { refetch } = getHomes({...(selectedHomeTypeName && { homeType: selectedHomeTypeName })})
 
-    const handleSelectItem = () => setSelectedItem(item.id);
+  const renderItem: ListRenderItem<THomeType> = ({ item: { name } }) => {
+    const isSelected = selectedHomeTypeName === name;
+
+    const handleSelectItem = () => {
+      setSelectedHomeTypeName(name);
+    };
 
     return (
       <HomeTypeCard
-        homeType={item.name}
+        homeType={name}
         isSelected={isSelected}
         onPress={handleSelectItem}
       />
     );
   };
+
+  useEffect(() => {
+    if (selectedHomeTypeName) {
+      refetch()
+    }
+  }, [selectedHomeTypeName])
 
   return (
     <S.HomeTypeSectionContainer

@@ -1,5 +1,5 @@
 import { Header } from '@components/Header';
-import { useHome } from '@hooks/useHome';
+import { useHome } from '@/hooks/useHome';
 import { StatusBar } from 'expo-status-bar';
 import { View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -13,6 +13,7 @@ import * as S from './styles';
 export const Home = () => {
   const insets = useSafeAreaInsets();
   const { getHomes, getHomeTypes } = useHome();
+
   const { data: homesData, isLoading: isHomesLoading } = getHomes();
   const { data: homeTypesData, isLoading: isHomeTypesLoading } = getHomeTypes();
 
@@ -25,7 +26,6 @@ export const Home = () => {
 
       {!isLoading && homesData && (
         <S.HomeContainer>
-          {!isLoading && homesData && (
             <View
               style={{ paddingTop: insets.top, paddingBottom: insets.bottom }}
             >
@@ -36,11 +36,10 @@ export const Home = () => {
               <HomeListSection homes={homesData} />
               <BestForYouSection homes={homesData} />
             </View>
-          )}
-
-          <StatusBar style="auto" />
         </S.HomeContainer>
       )}
+      
+      <StatusBar style="auto" />
     </>
   );
 };
