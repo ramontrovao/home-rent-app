@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { TouchableOpacity, type ListRenderItem } from 'react-native';
 import { PreviewCard } from './PreviewCard';
 import * as S from './styles';
-import { GallerySectionProps } from './types';
+import type { GallerySectionProps } from './types';
 
 export const GallerySection = ({ home }: GallerySectionProps) => {
   const [imageSelectedIndex, setimageSelectedIndex] = useState(0);

@@ -1,4 +1,4 @@
-import { THome } from '@type/home';
+import type { THome } from '@type/home';
 
 export const HOME_TYPES_MOCK = [
   {

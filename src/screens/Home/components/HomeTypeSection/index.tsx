@@ -3,7 +3,7 @@ import { type ListRenderItem } from 'react-native';
 import { HomeTypeCard } from './HomeTypeCard';
 import * as S from './styles';
 import type { HomeTypeSectionProps } from './types';
-import { THomeType } from '@type/home-type';
+import type { THomeType } from '@type/home-type';
 
 export const HomeTypeSection = ({ homeTypes, onChangeHomeType, selectedHomeType }: HomeTypeSectionProps) => {
   const renderItem: ListRenderItem<THomeType> = ({ item: { name } }) => {

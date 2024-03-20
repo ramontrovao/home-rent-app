@@ -4,6 +4,9 @@ module.exports = {
     plugins: [
         '@typescript-eslint',
     ],
+    rules: {
+        "@typescript-eslint/consistent-type-imports": "error"
+    },
     extends: [
         'prettier',
         'plugin:@typescript-eslint/recommended',

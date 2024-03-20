@@ -1,5 +1,5 @@
 import { DEFAULT_THEME } from '@styles/theme';
-import { THome } from '@type/home';
+import type { THome } from '@type/home';
 import { type ListRenderItem } from 'react-native';
 import { HomeCard } from './HomeCard';
 import * as S from './styles';

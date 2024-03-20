@@ -10,7 +10,7 @@ import { HomeListSection } from './components/HomeListSection';
 import { HomeTypeSection } from './components/HomeTypeSection';
 import * as S from './styles';
 import { useEffect, useState } from 'react';
-import { THomeTypeNames } from '@type/home-type';
+import type { THomeTypeNames } from '@type/home-type';
 
 export const Home = () => {
   const [selectedHomeType, setSelectedHomeType] = useState<THomeTypeNames | null>(

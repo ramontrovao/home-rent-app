@@ -1,4 +1,4 @@
-import { THomeType, THomeTypeNames } from "@type/home-type";
+import type { THomeType, THomeTypeNames } from "@type/home-type";
 
 export interface HomeTypeSectionProps {
   homeTypes: THomeType[];

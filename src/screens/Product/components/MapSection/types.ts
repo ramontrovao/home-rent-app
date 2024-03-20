@@ -1,4 +1,4 @@
-import { TLocation } from '@type/location';
+import type { TLocation } from '@type/location';
 
 export interface MapSectionProps {
   location: TLocation;

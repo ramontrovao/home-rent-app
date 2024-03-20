@@ -1,6 +1,6 @@
-import { TAddress } from './address';
+import type { TAddress } from './address';
 import type { THomeType } from './home-type';
-import { TLocation } from './location';
+import type { TLocation } from './location';
 import type { TOwner } from './owner';
 
 export type THome = {

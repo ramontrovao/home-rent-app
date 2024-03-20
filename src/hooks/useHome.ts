@@ -1,9 +1,9 @@
 import { useQuery } from '@tanstack/react-query';
 import { HOMES_KEY, HOME_KEY, HOME_TYPES_KEY } from '@constants/queries';
 import { fetchHome, fetchHomeTypes, fetchHomes } from '@/services/home';
-import { THome } from '@type/home';
-import { THomeType } from '@type/home-type';
-import { FetchHomesProps } from '@/services/home/types';
+import type { THome } from '@type/home';
+import type { THomeType } from '@type/home-type';
+import type { FetchHomesProps } from '@/services/home/types';
 
 export const useHome = () => {
   const getHomes = (props?: FetchHomesProps) => {

@@ -7,10 +7,10 @@ import { MapSection } from './components/MapSection';
 import { OwnerSection } from './components/OwnerSection';
 import { PriceSection } from './components/PriceSection';
 import * as S from './styles';
-import { TNavigatorParams } from '@/routes/types';
+import type { TNavigatorParams } from '@/routes/types';
 import { useHome } from '@/hooks/useHome';
 import { Loading } from '../Loading';
-import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 
 export const Product = ({
   route,
