@@ -5,7 +5,3 @@ export const HomeContainer = styled.ScrollView`
 
   background: ${({ theme }) => theme.COLORS.GRAY_BACKGROUND_100};
 `;
-
-export const Text = styled.Text`
-  color: ${({ theme }) => theme.COLORS.BLACK};
-`;

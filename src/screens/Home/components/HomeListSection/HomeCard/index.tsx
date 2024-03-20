@@ -1,12 +1,13 @@
 import { useNavigation } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
-import type { TNavigatorParams } from '@routes/router.types';
+import type { TNavigatorParams } from '@/routes/types';
 import { DEFAULT_THEME } from '@styles/theme';
 import * as S from './styles';
 import type { HomeCardProps } from './types';
 
 export const HomeCard = ({
   home: {
+    id,
     imagesUri,
     name,
     address: { country, state, city },
@@ -16,7 +17,7 @@ export const HomeCard = ({
     useNavigation<NativeStackNavigationProp<TNavigatorParams>>();
 
   return (
-    <S.HomeCardContainer onPress={() => navigation.push('product')}>
+    <S.HomeCardContainer onPress={() => navigation.push('product', { id })}>
       <S.HomeCardBackgroundImage
         testID={`home-background-image`}
         imageStyle={{

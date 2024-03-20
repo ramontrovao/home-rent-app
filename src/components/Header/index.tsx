@@ -1,6 +1,6 @@
-import * as S from './Header.styles';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { TouchableOpacity } from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import * as S from './styles';
 
 export const Header = () => {
   return (

@@ -1,4 +1,4 @@
-import { TanstackProvider } from '@/contexts/TanstackProvider';
+import { TanstackProvider } from '@/contexts/TanstackContext';
 import { NavigationContainer } from '@react-navigation/native';
 import { DEFAULT_THEME } from '@styles/theme';
 import { render, type RenderOptions } from '@testing-library/react-native';

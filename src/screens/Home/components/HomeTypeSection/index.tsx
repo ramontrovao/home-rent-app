@@ -1,21 +1,21 @@
 import { DEFAULT_THEME } from '@styles/theme';
-import { useState } from 'react';
 import { type ListRenderItem } from 'react-native';
 import { HomeTypeCard } from './HomeTypeCard';
 import * as S from './styles';
-import type { HomeTypeSectionProps, THomeType } from './types';
+import type { HomeTypeSectionProps } from './types';
+import type { THomeType } from '@type/home-type';
 
-export const HomeTypeSection = ({ homeTypes }: HomeTypeSectionProps) => {
-  const [selectedItem, setSelectedItem] = useState<number | null>(1);
+export const HomeTypeSection = ({ homeTypes, onChangeHomeType, selectedHomeType }: HomeTypeSectionProps) => {
+  const renderItem: ListRenderItem<THomeType> = ({ item: { name } }) => {
+    const isSelected = selectedHomeType === name;
 
-  const renderItem: ListRenderItem<THomeType> = ({ item }) => {
-    const isSelected = selectedItem === item.id;
-
-    const handleSelectItem = () => setSelectedItem(item.id);
+    const handleSelectItem = () => {
+      onChangeHomeType(name);
+    };
 
     return (
       <HomeTypeCard
-        homeType={item.name}
+        homeType={name}
         isSelected={isSelected}
         onPress={handleSelectItem}
       />
