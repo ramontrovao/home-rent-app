@@ -9,16 +9,31 @@ import { FilterSection } from './components/FilterSection';
 import { HomeListSection } from './components/HomeListSection';
 import { HomeTypeSection } from './components/HomeTypeSection';
 import * as S from './styles';
+import { useEffect, useState } from 'react';
+import { THomeTypeNames } from '@type/home-type';
 
 export const Home = () => {
+  const [selectedHomeType, setSelectedHomeType] = useState<THomeTypeNames | null>(
+    null
+  );
+
   const insets = useSafeAreaInsets();
   const { getHomes, getHomeTypes } = useHome();
-
-  const { data: homesData, isLoading: isHomesLoading } = getHomes();
+  const { data: homesData, isLoading: isHomesLoading, refetch: refetchHomes } = getHomes({...(selectedHomeType && { homeType: selectedHomeType })});
   const { data: homeTypesData, isLoading: isHomeTypesLoading } = getHomeTypes();
 
   const isLoading =
     isHomeTypesLoading || isHomesLoading || !homesData || !homeTypesData;
+
+  const handleChangeHomeType = (homeType: THomeTypeNames) => {
+    setSelectedHomeType(homeType)
+  }
+
+  useEffect(() => {
+    if (!!selectedHomeType) {
+      refetchHomes()
+    }
+  }, [selectedHomeType])
 
   return (
     <>
@@ -32,7 +47,7 @@ export const Home = () => {
               <Header />
 
               <FilterSection />
-              <HomeTypeSection homeTypes={homeTypesData} />
+              <HomeTypeSection onChangeHomeType={handleChangeHomeType} selectedHomeType={selectedHomeType} homeTypes={homeTypesData} />
               <HomeListSection homes={homesData} />
               <BestForYouSection homes={homesData} />
             </View>
