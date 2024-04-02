@@ -1,9 +1,12 @@
 import { TouchableOpacity } from 'react-native';
 import { BestForYouCard } from './components/BestForYouCard';
 import * as S from './styles';
-import type { BestForYouSectionProps } from './types';
+import { useHome } from '@hooks/useHome';
 
-export const BestForYouSection = ({ homes }: BestForYouSectionProps) => {
+export const BestForYouSection = () => {
+  const { getHomes } = useHome();
+  const { data: homes } = getHomes();
+
   return (
     <S.BestForYouSectionContainer testID="best-for-you-section">
       <S.BestForYouHeaderContainer>
@@ -15,7 +18,7 @@ export const BestForYouSection = ({ homes }: BestForYouSectionProps) => {
       </S.BestForYouHeaderContainer>
 
       <S.BestForYouListContainer>
-        {homes.map((home) => (
+        {homes?.map((home) => (
           <BestForYouCard key={home.id} home={home} />
         ))}
       </S.BestForYouListContainer>

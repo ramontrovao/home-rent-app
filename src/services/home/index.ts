@@ -1,8 +1,8 @@
-import type { THome } from '@type/home';
 import { fakeAPI } from '@lib/axios';
+import { updateQueryStringParameter } from '@utils/updateQueryStringParameter';
+import type { THome } from '@type/home';
 import type { THomeType } from '@type/home-type';
 import type { FetchHomesProps } from './types';
-import { updateQueryStringParameter } from '@/utils/updateQueryStringParameter';
 
 export const fetchHomes = async (props?: FetchHomesProps): Promise<THome[]> => {
   let url = '/homes'
