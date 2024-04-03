@@ -7,8 +7,8 @@ import type { THomeTypeNames } from "@type/home-type"
 
 export const HomesSection = () => {
   const [selectedHomeType, setSelectedHomeType] = useState<THomeTypeNames | null>(null)
-
   const { getHomes, getHomeTypes } = useHome()
+
   const { data: homeTypesData } = getHomeTypes();
   const { data: homesData } = getHomes({ ...(selectedHomeType && { homeType: selectedHomeType }) })
 
