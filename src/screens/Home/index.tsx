@@ -2,11 +2,9 @@ import { Header } from '@components/Header';
 import { View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { BestForYouSection } from './components/BestForYouSection';
-import { FilterSection } from './components/FilterSection';
-import { HomeListSection } from './components/HomeListSection';
-import { HomeTypeSection } from './components/HomeTypeSection';
-import * as S from './styles';
+import { HomesSection } from './components/HomesSection';
 import { StatusBar } from 'expo-status-bar';
+import * as S from './styles';
 
 export const Home = () => {
   const insets = useSafeAreaInsets();
@@ -19,9 +17,7 @@ export const Home = () => {
           >
             <Header />
 
-            <FilterSection />
-            <HomeTypeSection />
-            <HomeListSection />
+            <HomesSection />
             <BestForYouSection />
           </View>
       </S.HomeContainer>

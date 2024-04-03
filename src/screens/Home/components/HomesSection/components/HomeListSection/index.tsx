@@ -1,14 +1,11 @@
 import { DEFAULT_THEME } from '@styles/theme';
 import type { THome } from '@type/home';
 import { type ListRenderItem } from 'react-native';
-import { HomeCard } from './HomeCard';
+import { HomeCard } from './components/HomeCard';
 import * as S from './styles';
-import { useHome } from '@hooks/useHome';
+import type { HomeListSectionProps } from './types';
 
-export const HomeListSection = () => {
-  const { getHomes } = useHome();
-  const { data: homesData } = getHomes();
-
+export const HomeListSection = ({ homes }: HomeListSectionProps) => {
   const renderItem: ListRenderItem<THome> = ({ item }) => (
     <HomeCard home={item} />
   );
@@ -16,7 +13,7 @@ export const HomeListSection = () => {
   return (
     <S.HomeListSectionContainer
       horizontal
-      data={homesData}
+      data={homes}
       contentContainerStyle={{ gap: DEFAULT_THEME.SPACING.XXL }}
       keyExtractor={(item) => item.id.toString()}
       showsHorizontalScrollIndicator={false}

@@ -1,32 +1,20 @@
-import { useState } from 'react';
 import { type ListRenderItem } from 'react-native';
-import { HomeTypeCard } from './HomeTypeCard';
+import { HomeTypeCard } from './components/HomeTypeCard';
 import { DEFAULT_THEME } from '@styles/theme';
-import type { THomeType, THomeTypeNames } from '@type/home-type';
-import { useHome } from '@hooks/useHome';
+import type { THomeType } from '@type/home-type';
 import * as S from './styles';
+import type { HomeTypeSectionProps } from './types';
 
-export const HomeTypeSection = () => {
-  const [selectedHomeType, setSelectedHomeType] = useState<THomeTypeNames | undefined>(
-    undefined
-  );
-  
-  const { getHomes, getHomeTypes } = useHome()
-  getHomes({ ...(selectedHomeType && { homeType: selectedHomeType }) })
-  const { data: homeTypesData } = getHomeTypes();
-
+export const HomeTypeSection = ({ homeTypes, selectedHomeType, onSelect }: HomeTypeSectionProps) => {
   const renderItem: ListRenderItem<THomeType> = ({ item: { name } }) => {
     const isSelected = selectedHomeType === name;
 
-    const handleSelectItem = () => {
-      setSelectedHomeType(name);
-    };
 
     return (
       <HomeTypeCard
         homeType={name}
         isSelected={isSelected}
-        onPress={handleSelectItem}
+        onPress={() => onSelect(name)}
       />
     );
   };
@@ -34,7 +22,7 @@ export const HomeTypeSection = () => {
   return (
     <S.HomeTypeSectionContainer
       horizontal
-      data={homeTypesData}
+      data={homeTypes}
       contentContainerStyle={{ gap: DEFAULT_THEME.SPACING.LG }}
       keyExtractor={(item) => item.id.toString()}
       showsHorizontalScrollIndicator={false}
