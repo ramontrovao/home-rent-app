@@ -8,3 +8,7 @@ export const HomeListSectionContainer = styled(FlatList<THome>)`
   margin-top: ${({ theme }) => theme.SPACING.LG}px;
   padding-left: ${({ theme }) => theme.SPACING.XL}px;
 `;
+
+export const LoadingContainer = styled.View`
+  flex: 1;
+`;

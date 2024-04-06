@@ -17,11 +17,11 @@ export const BestForYouSection = () => {
         </TouchableOpacity>
       </S.BestForYouHeaderContainer>
 
-      <S.BestForYouListContainer>
-        {homes?.map((home) => (
-          <BestForYouCard key={home.id} home={home} />
-        ))}
-      </S.BestForYouListContainer>
+      {homes && (
+        <S.BestForYouListContainer>
+          {homes?.map((home) => <BestForYouCard key={home.id} home={home} />)}
+        </S.BestForYouListContainer>
+      )}
     </S.BestForYouSectionContainer>
   );
 };

@@ -11,14 +11,18 @@ export const HomeListSection = ({ homes }: HomeListSectionProps) => {
   );
 
   return (
-    <S.HomeListSectionContainer
-      horizontal
-      data={homes}
-      contentContainerStyle={{ gap: DEFAULT_THEME.SPACING.XXL }}
-      keyExtractor={(item) => item.id.toString()}
-      showsHorizontalScrollIndicator={false}
-      testID="home-list-section"
-      renderItem={renderItem}
-    />
+    <>
+      {homes && (
+        <S.HomeListSectionContainer
+          horizontal
+          data={homes}
+          contentContainerStyle={{ gap: DEFAULT_THEME.SPACING.XXL }}
+          keyExtractor={(item) => item.id.toString()}
+          showsHorizontalScrollIndicator={false}
+          testID="home-list-section"
+          renderItem={renderItem}
+        />
+      )}
+    </>
   );
 };

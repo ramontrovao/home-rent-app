@@ -29,5 +29,4 @@ export const BestForYouListContainer = styled.View`
   margin-top: ${({ theme }) => theme.SPACING.XXL}px;
 
   gap: ${({ theme }) => theme.SPACING.MD}px;
-  flex: 1;
 `;
